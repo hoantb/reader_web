@@ -19,8 +19,8 @@ class Home extends Component {
             <Upcoming />
             <Popular />
             <Choice />
-            {/* <Play />
-            <Stream />
+            <Play />
+            {/* <Stream />
             <Footer /> */}
         </div>
     );
