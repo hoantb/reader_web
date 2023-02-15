@@ -111,19 +111,6 @@ class Play extends Component {
                     <div className="play2rir">
                     <h6 className="fw-normal">Imdb - 9.2</h6>
                     <div className="progress">
-            <div className="progress-bar" role="progressbar" style="width: 92%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-                    <h6 className="fw-normal mt-3">Semper - 7.3</h6>
-                    <div className="progress">
-            <div className="progress-bar" role="progressbar" style="width: 73%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-                    <h6 className="fw-normal mt-3">Dapibus - 9.0</h6>
-                    <div className="progress">
-            <div className="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-                    <h6 className="fw-normal mt-3">Ipsum - 8.3</h6>
-                    <div className="progress">
-            <div className="progress-bar" role="progressbar" style="width: 83%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
                     <h6 className="fw-normal mt-3">Lorem - 7.9</h6>
                     <div className="progress">
