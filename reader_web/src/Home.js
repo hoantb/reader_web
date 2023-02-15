@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import Header from "./Header";
+import Center from "./Center";
  
 class Home extends Component {
   render() {
     return (
         <div>
-          <div class="container">
-             <Header />
-          </div>
+            <Header />
+            <Center />
         </div>
     );
   }
