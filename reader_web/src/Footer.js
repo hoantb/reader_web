@@ -159,7 +159,7 @@ class Footer extends Component {
             </section>
 
             <script>
-                window.onscroll = function() {myFunction()};
+                window.onscroll = function() { this.myFunction()};
 
                 var navbar_sticky = document.getElementById("navbar_sticky");
                 var sticky = navbar_sticky.offsetTop;
