@@ -9,7 +9,7 @@ class Header extends Component {
                     <div className="row top_1">
                         <div className="col-md-3">
                             <div className="top_1l pt-1">
-                                <h3 className="mb-0"><a class="text-white" href="index.html"><i class="fa fa-video-camera col_red me-1"></i> Planet</a></h3>
+                                <h3 className="mb-0"><a className="text-white" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Planet</a></h3>
                             </div>
                         </div>
                         <div className="col-md-5">
@@ -58,9 +58,9 @@ class Header extends Component {
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Blog
                         </a>
-                        <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                            <li><a class="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+                        <ul className="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                            <li><a className="dropdown-item" href="blog.html">Blog</a></li>
+                            <li><a className="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
                         </ul>
                         </li>
                         <li className="nav-item">
@@ -73,7 +73,7 @@ class Header extends Component {
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Pages
                         </a>
-                        <ul class="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
+                        <ul className="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
                             <li><a className="dropdown-item" href="about.html">About Us</a></li>
                             <li><a className="dropdown-item" href="services.html">Services</a></li>
                             <li><a className="dropdown-item" href="team.html">Team</a></li>

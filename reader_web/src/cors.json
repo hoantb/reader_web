@@ -1,0 +1,8 @@
+[
+    {
+        "origin": ["http://34.124.213.64/"],
+        "responseHeader": ["*"],
+        "method": ["GET", "POST", "HEAD", "PUT"],
+        "maxAgeSeconds": 86400
+    }
+]
