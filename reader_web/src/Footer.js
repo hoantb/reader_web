@@ -1,16 +1,7 @@
-import React, { Component } from "react";
+import React, { Component} from "react";
  
 class Footer extends Component {
-    myFunction() 
-    {
-        if (window.pageYOffset >= sticky + navbar_height) {
-            navbar_sticky.classNameList.add("sticky")
-            document.body.style.paddingTop = navbar_height + 'px';
-        } else {
-            navbar_sticky.classNameList.remove("sticky");
-            document.body.style.paddingTop = '0'
-        }
-    }
+
   render() {
     return (
         <div>

@@ -7,6 +7,7 @@ import Popular from "./Popular";
 import Choice from "./Choice";
 import Play from "./Play";
 import Stream from "./Stream";
+import PdfPreview from "./PdfPreview";
 import Footer from "./Footer";
  
 class Home extends Component {
@@ -21,6 +22,7 @@ class Home extends Component {
             <Choice />
             <Stream />
             <Footer />
+            <PdfPreview/>
         </div>
     );
   }

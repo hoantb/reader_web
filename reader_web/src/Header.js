@@ -1,6 +1,42 @@
 import React, { Component } from "react";
  
 class Header extends Component {
+    constructor(props) {
+        super(props);
+        // var navbar_sticky = document.getElementById("navbar_sticky");
+        // var sticky = navbar_sticky.offsetTop;
+        // var navbar_height = document.querySelector('.navbar').offsetHeight;
+        this.state = {
+            sticky: 0,
+            navbar_height: 0
+        }
+        this.navbar_sticky_ref = React.createRef();
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick () {
+
+        if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
+        {
+            this.navbar_sticky_ref.current.classList.add("sticky")
+            document.body.style.paddingTop = this.state.navbar_height + 'px';
+        } 
+        else 
+        {
+            this.navbar_sticky_ref.current.classList.remove("sticky");
+            document.body.style.paddingTop = '0'
+        }
+        
+    }
+
+    componentDidMount() {
+        window.onscroll = this.handleClick;
+        this.setState({sticky: this.navbar_sticky_ref.current.offsetTop})
+        this.setState({navbar_height: document.querySelector('.navbar').offsetHeight})
+    }
+    useEffect() {
+        
+    }
   render() {
     return (
         <div>
@@ -40,7 +76,7 @@ class Header extends Component {
 
 
             <section id="header">
-                <nav className="navbar navbar-expand-md navbar-light" id="navbar_sticky">
+                <nav className="navbar navbar-expand-md navbar-light" id="navbar_sticky" ref={this.navbar_sticky_ref}>
                 <div className="container">
                     <a className="navbar-brand text-white fw-bold" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Planet</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
