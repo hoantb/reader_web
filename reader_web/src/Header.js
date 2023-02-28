@@ -16,16 +16,16 @@ class Header extends Component {
     }
     handleClick () {
 
-        if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
-        {
-            this.navbar_sticky_ref.current.classList.add("sticky")
-            document.body.style.paddingTop = this.state.navbar_height + 'px';
-        } 
-        else 
-        {
-            this.navbar_sticky_ref.current.classList.remove("sticky");
-            document.body.style.paddingTop = '0'
-        }
+        // if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
+        // {
+        //     this.navbar_sticky_ref.current.classList.add("sticky")
+        //     document.body.style.paddingTop = this.state.navbar_height + 'px';
+        // } 
+        // else 
+        // {
+        //     this.navbar_sticky_ref.current.classList.remove("sticky");
+        //     document.body.style.paddingTop = '0'
+        // }
         
     }
 

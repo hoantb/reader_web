@@ -2,14 +2,28 @@ import React, { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import Center from "./Center";
+import withRouter from "./withRouter";
+import * as ConstantsVar from "./common/constants";
+
 class BookPreview extends Component {
 
     constructor(props) {
         super(props);
+
+        this.state = {
+            book: {}
+        }
     }
 
-    componentDidMount () {
-        console.log(this.props.name)
+    componentDidMount() {
+        fetch( ConstantsVar.API_URL + "/api/books" + "/" + this.props.params.id)
+        .then(res => res.json())
+        .then(
+            (result) => {
+                console.log(result);
+                this.setState({book: result})
+            }
+        )
     }
     
 
@@ -45,7 +59,9 @@ class BookPreview extends Component {
                         <div className="popular_2i1lm1 clearfix">
                             <div className="grid">
                         <figure className="effect-jazz mb-0">
-                            <a href="#"><img src="img/2.jpg" height="450" className="w-100" alt="img25" /></a>
+                            {this.state.book.image_preview &&
+                                <a href="#"><img src={this.state.book.image_preview} height="450" className="w-100" alt="img25" /></a>
+                            }
                         </figure>
                     </div>
                         </div>
@@ -58,7 +74,9 @@ class BookPreview extends Component {
                         </div>
                     <div className="blog_1l1i mt-3">
                         <h5><i className="fa fa-folder-open col_red me-1"></i> Movie News</h5>
-                        <h2 className="mt-3"><a className="col_red" href="#">Company Foundation Provides  Grant to Emory Law	</a></h2>
+                        {this.state.book.image_preview &&
+                            <h2 className="mt-3"><a className="col_red" href="#"></a>{this.state.book.title}</h2>
+                        }
                         <h6 className="fw-normal mt-3 col_light">
                         <span><i className="fa fa-clock-o me-1 align-middle col_red"></i> 14 December 2021</span>
                         <span className="ms-3"><i className="fa fa-user me-1 align-middle col_red"></i> Admin</span>
@@ -209,7 +227,7 @@ class BookPreview extends Component {
                         <textarea placeholder="Comment" className="form-control form_text"></textarea>
                         <div className="form-check mt-3">
                         <input type="checkbox" className="form-check-input" id="customCheck1" />
-                        <label className="form-check-label" for="customCheck1">Save my name and email in this browser for the next time I comment.</label>
+                        <label className="form-check-label" htmlFor="customCheck1">Save my name and email in this browser for the next time I comment.</label>
                     </div>
                         <h6 className="mt-3 mb-0"><a className="button" href="#"> Comment</a></h6>
                         </div>
@@ -379,7 +397,7 @@ class BookPreview extends Component {
                     </div>
                     <div className="form-check mt-3">
                             <input type="checkbox" className="form-check-input" id="checkmeout0" />
-                            <label className="form-check-label" for="checkmeout0">Remember Me</label>
+                            <label className="form-check-label" htmlFor="checkmeout0">Remember Me</label>
                         </div>
                         <h6 className="mt-3"><a className="button" href="blog_detail.html"><i className="fa fa-long-arrow-right align-middle me-1"></i> Login</a></h6>
                         <h6 className="mt-3"><a className="col_red" href="blog_detail.html">Create an account <i className="fa fa-long-arrow-right ms-1"></i></a></h6>
@@ -418,4 +436,4 @@ class BookPreview extends Component {
     }
 }
  
-export default BookPreview;
+export default withRouter(BookPreview);

@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
+import * as ConstantsVar from "./common/constants";
 
 class Trend extends Component {
 
@@ -9,7 +10,7 @@ class Trend extends Component {
     }
 
     componentDidMount() {
-        fetch("http://34.124.213.64/api/books")
+        fetch( ConstantsVar.API_URL + "/api/books")
         .then(res => res.json())
         .then(
             (result) => {
@@ -46,12 +47,12 @@ class Trend extends Component {
                             {/* loop item */}
                             {this.state.books.map(
                                 book => (
-                                    <div className="col-md-3 col-6">
+                                    <div className="col-md-3 col-6" key={book.id}>
                                         <div className="trend_2im clearfix position-relative">
                                             <div className="trend_2im1 clearfix">
                                                 <div className="grid">
                                                     <figure className="effect-jazz mb-0">
-                                                        <Link to="book-preview" params={{ name: "hello" }}><img src={book.image_preview} className="w-100" alt="img25" /></Link>
+                                                        <Link to={"book-preview/" + book.id} ><img src={book.image_preview} className="w-100" alt="img25" /></Link>
                                                     </figure>
                                                 </div>
                                             </div>
