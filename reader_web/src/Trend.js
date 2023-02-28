@@ -1,5 +1,6 @@
 import React, { Component } from "react";
- 
+import { Link } from 'react-router-dom';
+
 class Trend extends Component {
 
     constructor(props) {
@@ -50,7 +51,7 @@ class Trend extends Component {
                                             <div className="trend_2im1 clearfix">
                                                 <div className="grid">
                                                     <figure className="effect-jazz mb-0">
-                                                        <a href="#"><img src={book.image_preview} className="w-100" alt="img25" /></a>
+                                                        <Link to="book-preview" params={{ name: "hello" }}><img src={book.image_preview} className="w-100" alt="img25" /></Link>
                                                     </figure>
                                                 </div>
                                             </div>
