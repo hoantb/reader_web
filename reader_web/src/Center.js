@@ -14,7 +14,7 @@ class Center extends Component {
                 <div className="carousel-item active">
                 <img src="https://storage.googleapis.com/reader-web-statics/img/1.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-md-block">
-                <h1 className="font_60"> Entertainment Planet</h1>
+                <h1 className="font_60"> Doremon</h1>
                 <h6 className="mt-3">
                     <span className="col_red me-3">
                     <i className="fa fa-star"></i>
@@ -23,14 +23,14 @@ class Center extends Component {
                     <i className="fa fa-star"></i>
                     <i className="fa fa-star-half-o"></i>
                     </span>
-                    4.5 (Imdb)      Year : 2022
-                    <a className="bg_red p-2 pe-4 ps-4 ms-3 text-white d-inline-block" href="#">Action</a>
+                    4.5 (Tốt)      Năm : 2022
+                    <a className="bg_red p-2 pe-4 ps-4 ms-3 text-white d-inline-block" href="#">Đọc ngay</a>
                 </h6>
-                <p className="mt-3">Four waves of increasingly deadly alien attacks have left most of Earth in ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
-                <p className="mb-2"><span className="col_red me-1 fw-bold">Starring:</span> Eget Nulla Semper Porta Dapibus Diam Ipsum</p>
-                <p className="mb-2"><span className="col_red me-1 fw-bold">Genres:</span> Music</p>
-                <p><span className="col_red me-1 fw-bold">Runtime:</span> 1h 32m</p>	
-                <h6 className="mt-4"><a className="button" href="#"><i className="fa fa-play-circle align-middle me-1"></i> Watch Trailer</a></h6>
+                <p className="mt-3">Bốn đợt tấn công ngày càng nguy hiểm của người ngoài hành tinh đã khiến phần lớn Trái đất bị hủy hoại. Cassie đang chạy trốn, cố gắng hết sức để cứu em trai mình.</p>
+                <p className="mb-2"><span className="col_red me-1 fw-bold">Nhân vật chính:</span> Nobita</p>
+                <p className="mb-2"><span className="col_red me-1 fw-bold">Thể loại:</span> truyện tranh nhật bản</p>
+                <p><span className="col_red me-1 fw-bold">Số tập:</span> 45</p>	
+                <h6 className="mt-4"><a className="button" href="#"><i className="fa fa-play-circle align-middle me-1"></i> Xem review</a></h6>
                 </div>
                 </div>
                 <div className="carousel-item">

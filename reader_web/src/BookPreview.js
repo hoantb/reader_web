@@ -99,7 +99,6 @@ class BookPreview extends Component {
                         <li className="d-inline-block"><a href="#"><i className="fa fa-tag me-1 col_red"></i> News</a></li>
                         </ul>	
                         <ul className="social-network social-circle mb-0 mt-3">
-                                    <li><a href="#" className="icoRss" title="Rss"><i className="fa fa-skype"></i></a></li>
                                     <li><a href="#" className="icoFacebook" title="Facebook"><i className="fa fa-facebook"></i></a></li>
                                     <li><a href="#" className="icoTwitter" title="Twitter"><i className="fa fa-twitter"></i></a></li>
                                     <li><a href="#" className="icoGoogle" title="Google +"><i className="fa fa-instagram"></i></a></li>

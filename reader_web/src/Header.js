@@ -62,7 +62,6 @@ class Header extends Component {
                         <div className="col-md-4">
                             <div className="top_1r text-end">
                                 <ul className="social-network social-circle mb-0">
-                                        <li><a href="#" className="icoRss" title="Rss"><i className="fa fa-instagram"></i></a></li>
                                         <li><a href="#" className="icoFacebook" title="Facebook"><i className="fa fa-facebook"></i></a></li>
                                         <li><a href="#" className="icoTwitter" title="Twitter"><i className="fa fa-twitter"></i></a></li>
                                         <li><a href="#" className="icoGoogle" title="Google +"><i className="fa fa-youtube"></i></a></li>
