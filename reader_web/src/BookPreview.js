@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-import Center from "./Center";
+import { Link } from 'react-router-dom';
 import withRouter from "./withRouter";
 import * as ConstantsVar from "./common/constants";
 
@@ -37,12 +37,12 @@ class BookPreview extends Component {
                     <div className="row center_o1">
                     <div className="col-md-5">
                         <div className="center_o1l">
-                        <h2 className="mb-0">Blog Detail</h2>
+                        <h2 className="mb-0">Review truyện </h2>
                         </div>
                     </div>
                     <div className="col-md-7">
                         <div className="center_o1r text-end">
-                        <h6 className="mb-0 col_red"><a href="#">Home</a> <span className="me-2 ms-2 text-light"><i className="fa fa-caret-right align-middle"></i></span> Blog Detail</h6>
+                        <h6 className="mb-0 col_red"><a href="#">Home</a> <span className="me-2 ms-2 text-light"><i className="fa fa-caret-right align-middle"></i></span> Review truyện</h6>
                         </div>
                     </div>
                     </div>
@@ -73,7 +73,7 @@ class BookPreview extends Component {
                         </div>
                         </div>
                     <div className="blog_1l1i mt-3">
-                        <h5><i className="fa fa-folder-open col_red me-1"></i> Movie News</h5>
+                        <h5><i className="fa fa-folder-open col_red me-1"></i> Giới thiệu truyện</h5>
                         {this.state.book.image_preview &&
                             <h2 className="mt-3"><a className="col_red" href="#"></a>{this.state.book.title}</h2>
                         }
@@ -246,51 +246,50 @@ class BookPreview extends Component {
                 <div className="col-md-4">
                     <div className="blog_1r">
                     <div className="blog_1r1 p-4">
-                    <h4>Main <span className="col_red">Menu</span></h4>
-                    <hr className="line mb-4" />
-                    <h6><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> Audio <span className="pull-right">(12)</span></a></h6>
-                        <hr />
-                        <h6><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> Magazine <span className="pull-right">(03)</span></a></h6>
-                        <hr />
-                        <h6><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> News <span className="pull-right">(08)</span></a></h6>
-                        <hr />
-                        <h6><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> Photoshop <span className="pull-right">(12)</span></a></h6>
-                        <hr />
-                        <h6><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> Technical <span className="pull-right">(07)</span></a></h6>
-                        <hr />
-                        <h6><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> Uncategorized <span className="pull-right">(09)</span></a></h6>
-                        <hr />
-                        <h6 className="mb-0"><a href="blog_detail.html"><i className="fa fa-chevron-right me-1 col_red font_12"></i> Video <span className="pull-right">(04)</span></a></h6>
+                        <h4>Tập truyện</h4>
+                        <hr className="line mb-4" />
+                        {
+                            this.state.book.files && 
+                            this.state.book.files.map(
+                                file => (
+                                    <div key={file.id}>
+                                        <h6><Link to={"/file-preview/" + file.id}><i className="fa fa-chevron-right me-1 col_red font_12"></i> {file.title} <span className="pull-right">(12)</span></Link></h6>
+                                        <hr />
+                                    </div>
+                                )
+                            )
+                        }
                     </div>
                     <div className="blog_1r1 p-4 mt-4">
-                    <h4>Sidebar  <span className="col_red">News</span></h4>
+                    <h4>Tập truyện</h4>
                     <hr className="line mb-4" />
                     <div className="blog_1r1i row">
                         <div className="col-md-4 col-4">
-                        <div className="blog_1r1il">
-                        <div className="grid clearfix">
-                                <figure className="effect-jazz mb-0">
-                                    <a href="blog_detail.html"><img src="img/4.jpg"  className="w-100" alt="abc" /></a>
-                                </figure>
+                            <div className="blog_1r1il">
+                                <div className="grid clearfix">
+                                    <figure className="effect-jazz mb-0">
+                                        <a href="blog_detail.html"><img src="img/4.jpg"  className="w-100" alt="abc" /></a>
+                                    </figure>
+                                </div>
                             </div>
-                        </div>
                         </div>
                         <div className="col-md-8 ps-0 col-8">
-                        <div className="blog_1r1ir">
-                        <h6 className="mb-1"><a className="col_red" href="blog_detail.html">Company Foundation Provides</a></h6>
-                        <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-                        </div>
-                        </div>
-                    </div><hr />
-                    <div className="blog_1r1i row">
-                        <div className="col-md-4 col-4">
-                        <div className="blog_1r1il">
-                        <div className="grid clearfix">
-                                <figure className="effect-jazz mb-0">
-                                    <a href="blog_detail.html"><img src="img/5.jpg"  className="w-100" alt="abc" /></a>
-                                </figure>
+                            <div className="blog_1r1ir">
+                                <h6 className="mb-1"><a className="col_red" href="blog_detail.html">Company Foundation Provides</a></h6>
+                                <p className="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
                             </div>
                         </div>
+                    </div>
+                    <hr />
+                    <div className="blog_1r1i row">
+                        <div className="col-md-4 col-4">
+                            <div className="blog_1r1il">
+                                <div className="grid clearfix">
+                                    <figure className="effect-jazz mb-0">
+                                        <a href="blog_detail.html"><img src="img/5.jpg"  className="w-100" alt="abc" /></a>
+                                    </figure>
+                                </div>
+                            </div>
                         </div>
                         <div className="col-md-8 ps-0 col-8">
                         <div className="blog_1r1ir">
