@@ -82,16 +82,16 @@ class BookPreview extends Component {
                         <span className="ms-3"><i className="fa fa-user me-1 align-middle col_red"></i> Admin</span>
                         <span className="ms-3"><i className="fa fa-comment me-1 align-middle col_red"></i> Comment</span>
                         </h6>
-                        <p className="mt-3">Consectetuer adipiscing elit sedare diam nonummy nibh euismod estat tinciduntal ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minimatisa veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl. Name liber tempor cum soluta nobis eleifend option congue nihil imperdietes</p>
+                        <p className="mt-3">Nhà phát triển đại học Consectetuer có đường kính, Offset Euismod Estat tincidalal đến LAOREET một khoản tiền lớn vào cuối tuần. Để sôi sục cho Minimatisa Come, người đã tập thể dục Tation Ullamcorper Suscipit Carton Player. Tên sách được coi là không tải tùy chọn tùy chọn không có phần</p>
                     </div>
                     </div>
                     <div className="blog_1l2">
-                    <p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen It has urvived not only five centuries, but also the leap into electronic typesetting.</p>
+                    <p>Bài tập về nhà hoặc anh ta là người tiêu dùng ở Cục trong một công thức công thức nhân viên ngoài trời hoặc đau đớn Feugiat Nulla Nulla Chất chống oxy hóa nhưng đậu phộng và lớp và thường xuyên. Bản thân Lorem chỉ đơn giản là văn bản giả của ngành in và sắp chữ. Lorem là văn bản tiêu chuẩn của ngành kể từ những năm 1500, khi một máy in không xác định lấy một loại galley và tranh giành nó để tạo ra một mẫu vật mà nó đã phát triển không chỉ năm thế kỷ, mà còn là bước nhảy vọt vào việc sắp xếp điện tử.</p>
                     <blockquote className="blockquote bg_dark p-4 pt-3 mt-4">
-                                                    <p>Provident fugiat tempora architecto mollitia quos maiores perspiciatis obcaecati placeat aunty koi thako Architecto eaque accusamus minima in earum impedit atque</p>
+                                                    <p>Provident tránh các mùa, kiến ​​trúc sư của đa số cuộc gặp gỡ lớn hơn khi được làm hài lòng kiến ​​trúc sư Auny Koi Thako, và lời buộc tội nhỏ nhất trong sự cản trở của họ và</p>
                                                     <h6 className="fw-normal mb-0"><strong>- Dapibus Diam </strong>of Google Inc.</h6>
                                                 </blockquote>
-                    <p>It was popularised in the 1980s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including text are in so Ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation quis nostrud exercitation quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt iest laborum.</p>
+                    <p>Nó đã được phổ biến vào những năm 1980 với việc phát hành các tờ Letraset chứa Lorem rất nhiều đoạn, và gần đây hơn với phần mềm xuất bản máy tính để bàn như Aldus Pagemaker bao gồm cả văn bản rất quan trọng. Lorem rất cà rốt, nhà phát triển đại học cà chua, nhưng tôi sẽ ở trong một bản nhạc, và nỗi đau của một thời gian tuyệt vời. Ví dụ, với sự ngạc nhiên, ai đã thực hiện bất kỳ việc thực hiện việc thực hiện bất kỳ việc thực hiện việc làm nào, nhưng như là sự tiện lợi của sự thuận tiện. Bài tập về nhà hoặc một nỗi đau trong niềm vui bị chỉ trích là một cặp thoát khỏi nỗi đau. Ngoại trừ họ là những người rèm háo hức không làm nguyên tắc, họ là những món ăn nhẹ iest.</p>
                     <ul>
                         <li className="d-inline-block me-3"><a href="#"><i className="fa fa-tag me-1 col_red"></i> Blog</a></li>
                         <li className="d-inline-block me-3"><a href="#"><i className="fa fa-tag me-1 col_red"></i> Creative</a></li>
@@ -106,7 +106,7 @@ class BookPreview extends Component {
                                 </ul>					
                     </div>
                     <div className="blog_1l3 mt-4">
-                    <h3>Related Blogs</h3>
+                    <h3>Truyện liên quan</h3>
                     </div>
                     <div className="blog_1l4 mt-3">
                     <div className="popular_2i1 row">
@@ -167,7 +167,7 @@ class BookPreview extends Component {
                         </div>
                     </div>
                     <div className="blog_1l3 mt-4">
-                    <h3>Recent Comments</h3>
+                    <h3>Bình luận gần đây</h3>
                     </div>
                     <div className="blog_1l5 mt-3">
                     <div className="blog_1l5i row">
@@ -179,8 +179,8 @@ class BookPreview extends Component {
                         <div className="col-md-10 col-10">
                         <div className="blog_1l5ir">
                         <h5><a href="#">Mr Eget Nulla</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
-                        <p className="font_14">Hi, this is a comment.<br />
-                To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
+                        <p className="font_14">Xin chào, đây là một bình luận.<br />
+                Để xóa một bình luận, chỉ cần đăng nhập và xem nhận xét của bài đăng. Ở đó bạn sẽ có tùy chọn chỉnh sửa hoặc xóa chúng.</p>
                 <h6 className="font_14 mb-0 mt-3"><a className="button p-3 pt-2 pb-2" href="#"> Reply</a></h6>
                         </div> 
                         </div>
@@ -194,8 +194,8 @@ class BookPreview extends Component {
                         <div className="col-md-10 col-10">
                         <div className="blog_1l5ir">
                         <h5><a href="#">Mr Semp Porta</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
-                        <p className="font_14">Hi, this is a comment.<br />
-                To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
+                        <p className="font_14">Xin chào, đây là một bình luận.<br />
+                Để xóa một bình luận, chỉ cần đăng nhập và xem nhận xét của bài đăng. Ở đó bạn sẽ có tùy chọn chỉnh sửa hoặc xóa chúng.</p>
                 <h6 className="font_14 mb-0 mt-3"><a className="button p-3 pt-2 pb-2" href="#"> Reply</a></h6>
                         </div> 
                         </div>
@@ -209,15 +209,15 @@ class BookPreview extends Component {
                         <div className="col-md-10 col-10">
                         <div className="blog_1l5ir">
                         <h5><a href="#">Mr Quis Sem</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
-                        <p className="font_14">Hi, this is a comment.<br />
-                To delete a comment, just log in and view the post's comments. There you will have the option to edit or delete them.</p>
+                        <p className="font_14">Xin chào, đây là một bình luận.<br />
+                Để xóa một bình luận, chỉ cần đăng nhập và xem nhận xét của bài đăng. Ở đó bạn sẽ có tùy chọn chỉnh sửa hoặc xóa chúng.</p>
                 <h6 className="font_14 mb-0 mt-3"><a className="button p-3 pt-2 pb-2" href="#"> Reply</a></h6>
                         </div> 
                         </div>
                     </div>
                     </div>
                     <div className="blog_1l3 mt-4">
-                    <h3>Leave a  Comment</h3>
+                    <h3>Bình luận</h3>
                     </div>
                     <div className="blog_1l6 mt-3">
                     <div className="blog_1dt5 row mt-3">
@@ -226,9 +226,9 @@ class BookPreview extends Component {
                         <textarea placeholder="Comment" className="form-control form_text"></textarea>
                         <div className="form-check mt-3">
                         <input type="checkbox" className="form-check-input" id="customCheck1" />
-                        <label className="form-check-label" htmlFor="customCheck1">Save my name and email in this browser for the next time I comment.</label>
+                        <label className="form-check-label" htmlFor="customCheck1">Lưu tên của tôi và email trong trình duyệt này cho lần tiếp theo tôi nhận xét.</label>
                     </div>
-                        <h6 className="mt-3 mb-0"><a className="button" href="#"> Comment</a></h6>
+                        <h6 className="mt-3 mb-0"><a className="button" href="#"> Bình luận</a></h6>
                         </div>
                     </div>
                     <div className="col-md-6">
