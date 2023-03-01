@@ -13,7 +13,7 @@ class Stream extends Component {
             </div>
             <div className="col-md-6 col-6">
             <div className="trend_1r text-end">
-                <h6 className="mb-0"><a className="button" href="#"> View All</a></h6>
+                <h6 className="mb-0"><a className="button" href="#"> Xem tất cả</a></h6>
             </div>
             </div>
             </div>

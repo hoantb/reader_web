@@ -9,12 +9,12 @@ class Upcoming extends Component {
             <div className="row trend_1">
             <div className="col-md-6 col-6">
             <div className="trend_1l">
-                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1"></i> Upcoming <span className="col_red">Events</span></h4>
+                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1"></i> Truyện <span className="col_red">kỳ tới</span></h4>
             </div>
             </div>
             <div className="col-md-6 col-6">
             <div className="trend_1r text-end">
-                <h6 className="mb-0"><a className="button" href="#"> View All</a></h6>
+                <h6 className="mb-0"><a className="button" href="#"> Xem tất cả</a></h6>
             </div>
             </div>
             </div>

@@ -9,7 +9,7 @@ class Popular extends Component {
             <div className="row trend_1">
             <div className="col-md-12">
             <div className="trend_1l">
-                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1"></i> Trending <span className="col_red">Events</span></h4>
+                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1"></i> Đọc <span className="col_red">nhiều nhất</span></h4>
             </div>
             </div>
             </div>

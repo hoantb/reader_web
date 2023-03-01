@@ -26,12 +26,12 @@ class Trend extends Component {
             <div className="row trend_1">
             <div className="col-md-6 col-6">
             <div className="trend_1l">
-                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1"></i> Latest <span className="col_red">Movies</span></h4>
+                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1 "></i> Truyện <span className="col_red">mới nhất</span></h4>
             </div>
             </div>
             <div className="col-md-6 col-6">
             <div className="trend_1r text-end">
-                <h6 className="mb-0"><a className="button" href="#"> View All</a></h6>
+                <h6 className="mb-0"><a className="button" href="#"> Xem tất cả</a></h6>
             </div>
             </div>
             </div>
@@ -57,7 +57,7 @@ class Trend extends Component {
                                                 </div>
                                             </div>
                                             <div className="trend_2im2 clearfix text-center position-absolute w-100 top-0">
-                                                <span className="fs-1"><a className="col_red" href="#"><i className="fa fa-youtube-play"></i></a></span>
+                                                <span className="fs-1"></span>
                                             </div>
                                         </div>
                                         <div className="trend_2ilast bg_grey p-3 clearfix">
