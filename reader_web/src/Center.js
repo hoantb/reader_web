@@ -25,13 +25,13 @@ class Center extends Component {
                     <i className="fa fa-star-half-o"></i>
                     </span>
                     4.5 (Tốt)      Năm : 2022
-                    <Link className="bg_red p-2 pe-4 ps-4 ms-3 text-white d-inline-block" to="/">Đọc ngay</Link>
+                    <Link className="bg_red p-2 pe-4 ps-4 ms-3 text-white d-inline-block" to="/book-preview/1">Đọc ngay</Link>
                 </h6>
                 <p className="mt-3">Bốn đợt tấn công ngày càng nguy hiểm của người ngoài hành tinh đã khiến phần lớn Trái đất bị hủy hoại. Cassie đang chạy trốn, cố gắng hết sức để cứu em trai mình.</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Nhân vật chính:</span> Nobita</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Thể loại:</span> truyện tranh nhật bản</p>
                 <p><span className="col_red me-1 fw-bold">Số tập:</span> 45</p>	
-                <h6 className="mt-4"><Link className="button" to="/"><i className="align-middle me-1"></i> Xem review</Link></h6>
+                <h6 className="mt-4"><Link className="button" to="/book-preview/1"><i className="align-middle me-1"></i> Xem review</Link></h6>
                 </div>
                 </div>
                 <div className="carousel-item">
