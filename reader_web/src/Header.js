@@ -82,7 +82,7 @@ class Header extends Component {
             <section id="header">
                 <nav className="navbar navbar-expand-md navbar-light" id="navbar_sticky" ref={this.navbar_sticky_ref}>
                 <div className="container">
-                    <a className="navbar-brand text-white fw-bold" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Planet</a>
+                    <a className="navbar-brand text-white fw-bold" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Enjoy Reading</a>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>

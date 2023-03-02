@@ -30,7 +30,7 @@ class Center extends Component {
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Nhân vật chính:</span> Nobita</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Thể loại:</span> truyện tranh nhật bản</p>
                 <p><span className="col_red me-1 fw-bold">Số tập:</span> 45</p>	
-                <h6 className="mt-4"><a className="button" href="#"><i className="fa fa-play-circle align-middle me-1"></i> Xem review</a></h6>
+                <h6 className="mt-4"><a className="button" href="#"><i className="align-middle me-1"></i> Xem review</a></h6>
                 </div>
                 </div>
                 <div className="carousel-item">
