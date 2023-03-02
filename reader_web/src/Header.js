@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
  
 class Header extends Component {
     constructor(props) {
@@ -84,7 +85,7 @@ class Header extends Component {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav mb-0">
                         <li className="nav-item">
-                        <a className="nav-link active" aria-current="page" href="index.html">Trang chủ</a>
+                        <Link to="/" className="nav-link active" aria-current="page" >Trang chủ</Link>
                         </li>
                         <li className="nav-item">
                         <a className="nav-link" href="about.html">Giới thiệu</a>
