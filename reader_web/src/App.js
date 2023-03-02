@@ -4,6 +4,8 @@ import Home from './Home';
 import BookPreview from './BookPreview';
 import PdfPreview from './PdfPreview'
 import { Route, BrowserRouter, Routes, Navigate} from 'react-router-dom';
+import AboutUs from './AboutUs';
+import Contact from './Contact';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
                 <Route exact path="/" element={<Home />} />
                 <Route name="book-preview" path="/book-preview/:id" element={<BookPreview />} />
                 <Route name="file-preview" path="/file-preview/:id" element={<PdfPreview />} />
+                <Route name="about-us" path="/about-us" element={<AboutUs />} />
+                <Route name="contact" path="/contact" element={<Contact />} />
                 {/* <Route path='*' element={<Navigate to='/' />} /> */}
           </Routes>
           

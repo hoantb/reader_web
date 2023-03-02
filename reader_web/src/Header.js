@@ -88,7 +88,7 @@ class Header extends Component {
                         <Link to="/" className="nav-link active" aria-current="page" >Trang chủ</Link>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="about.html">Giới thiệu</a>
+                        <Link className="nav-link" to="/about-us">Giới thiệu</Link>
                         </li>
                         <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -100,7 +100,7 @@ class Header extends Component {
                         </ul>
                         </li>
                         <li className="nav-item">
-                        <a className="nav-link" href="contact.html">Liên hệ</a>
+                        <Link to="/contact" className="nav-link" href="contact.html">Liên hệ</Link>
                         </li>
                     </ul>
                     </div>
