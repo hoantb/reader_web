@@ -178,12 +178,12 @@ class BookPreview extends Component {
                                     <div className="blog_1l5i row">
                                         <div className="col-md-2 col-2 pe-0">
                                         <div className="blog_1l5il">
-                                        <img src="img/34.jpg" className="w-100" alt="abc" />
+                                        <img src={comment.visitor.avatar} className="w-100" alt="abc" />
                                         </div>
                                         </div>
                                         <div className="col-md-10 col-10">
                                             <div className="blog_1l5ir">
-                                                <h5><a href="#">Mr Eget Nulla</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
+                                                <h5><a href="#">{comment.visitor.name}</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
                                                 <p className="font_14">{comment.comment}</p>
                                             </div> 
                                         </div>
