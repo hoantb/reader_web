@@ -14,19 +14,23 @@ class Header extends Component {
         this.navbar_sticky_ref = React.createRef();
 
         this.handleClick = this.handleClick.bind(this);
+        this.btnHandleSearch = this.btnHandleSearch.bind(this);
+    }
+    btnHandleSearch () {
+        console.log("ok")
     }
     handleClick () {
 
-        // if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
-        // {
-        //     this.navbar_sticky_ref.current.classList.add("sticky")
-        //     document.body.style.paddingTop = this.state.navbar_height + 'px';
-        // } 
-        // else 
-        // {
-        //     this.navbar_sticky_ref.current.classList.remove("sticky");
-        //     document.body.style.paddingTop = '0'
-        // }
+        if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
+        {
+            this.navbar_sticky_ref.current.classList.add("sticky")
+            document.body.style.paddingTop = this.state.navbar_height + 'px';
+        } 
+        else 
+        {
+            this.navbar_sticky_ref.current.classList.remove("sticky");
+            document.body.style.paddingTop = '0'
+        }
         
     }
 
@@ -54,8 +58,8 @@ class Header extends Component {
                                 <div className="input-group">
                                             <input type="text" className="form-control bg-black" placeholder="Tên truyện..." />
                                             <span className="input-group-btn">
-                                                <button className="btn btn text-white bg_red rounded-0 border-0" type="button">
-                                                Tìm kiếm</button>
+                                                <Link to="/book-searching" className="btn btn text-white bg_red rounded-0 border-0" type="button">
+                                                Tìm kiếm</Link>
                                             </span>
                                     </div>
                             </div>

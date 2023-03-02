@@ -42,7 +42,7 @@ class BookPreview extends Component {
                     </div>
                     <div className="col-md-7">
                         <div className="center_o1r text-end">
-                        <h6 className="mb-0 col_red"><a href="#">Home</a> <span className="me-2 ms-2 text-light"><i className="fa fa-caret-right align-middle"></i></span> Review truyện</h6>
+                        <h6 className="mb-0 col_red"><Link href="#">Trang chủ</Link> <span className="me-2 ms-2 text-light"><i className="fa fa-caret-right align-middle"></i></span> Review truyện</h6>
                         </div>
                     </div>
                     </div>
@@ -170,51 +170,29 @@ class BookPreview extends Component {
                     <h3>Bình luận gần đây</h3>
                     </div>
                     <div className="blog_1l5 mt-3">
-                    <div className="blog_1l5i row">
-                        <div className="col-md-2 col-2 pe-0">
-                        <div className="blog_1l5il">
-                        <img src="img/34.jpg" className="w-100" alt="abc" />
-                        </div>
-                        </div>
-                        <div className="col-md-10 col-10">
-                        <div className="blog_1l5ir">
-                        <h5><a href="#">Mr Eget Nulla</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
-                        <p className="font_14">Xin chào, đây là một bình luận.<br />
-                Để xóa một bình luận, chỉ cần đăng nhập và xem nhận xét của bài đăng. Ở đó bạn sẽ có tùy chọn chỉnh sửa hoặc xóa chúng.</p>
-                <h6 className="font_14 mb-0 mt-3"><a className="button p-3 pt-2 pb-2" href="#"> Reply</a></h6>
-                        </div> 
-                        </div>
-                    </div><hr />
-                    <div className="blog_1l5i row">
-                        <div className="col-md-2 col-2 pe-0">
-                        <div className="blog_1l5il">
-                        <img src="img/35.jpg" className="w-100" alt="abc" />
-                        </div>
-                        </div>
-                        <div className="col-md-10 col-10">
-                        <div className="blog_1l5ir">
-                        <h5><a href="#">Mr Semp Porta</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
-                        <p className="font_14">Xin chào, đây là một bình luận.<br />
-                Để xóa một bình luận, chỉ cần đăng nhập và xem nhận xét của bài đăng. Ở đó bạn sẽ có tùy chọn chỉnh sửa hoặc xóa chúng.</p>
-                <h6 className="font_14 mb-0 mt-3"><a className="button p-3 pt-2 pb-2" href="#"> Reply</a></h6>
-                        </div> 
-                        </div>
-                    </div><hr />
-                    <div className="blog_1l5i row">
-                        <div className="col-md-2 col-2 pe-0">
-                        <div className="blog_1l5il">
-                        <img src="img/36.jpg" className="w-100" alt="abc" />
-                        </div>
-                        </div>
-                        <div className="col-md-10 col-10">
-                        <div className="blog_1l5ir">
-                        <h5><a href="#">Mr Quis Sem</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
-                        <p className="font_14">Xin chào, đây là một bình luận.<br />
-                Để xóa một bình luận, chỉ cần đăng nhập và xem nhận xét của bài đăng. Ở đó bạn sẽ có tùy chọn chỉnh sửa hoặc xóa chúng.</p>
-                <h6 className="font_14 mb-0 mt-3"><a className="button p-3 pt-2 pb-2" href="#"> Reply</a></h6>
-                        </div> 
-                        </div>
-                    </div>
+                        {
+                            this.state.book.comments &&
+                            this.state.book.comments.map(
+                                comment => (
+                                    <div key={"comment_" + comment.id}>
+                                    <div className="blog_1l5i row">
+                                        <div className="col-md-2 col-2 pe-0">
+                                        <div className="blog_1l5il">
+                                        <img src="img/34.jpg" className="w-100" alt="abc" />
+                                        </div>
+                                        </div>
+                                        <div className="col-md-10 col-10">
+                                            <div className="blog_1l5ir">
+                                                <h5><a href="#">Mr Eget Nulla</a> <span className="font_14 col_light">/ 13 July 2017</span></h5>
+                                                <p className="font_14">{comment.comment}</p>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    </div>
+                                )
+                            )
+                        }
                     </div>
                     <div className="blog_1l3 mt-4">
                     <h3>Bình luận</h3>

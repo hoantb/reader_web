@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
+import { Link } from "react-router-dom";
  
 class AboutUs extends Component {
   render() {
@@ -12,12 +13,12 @@ class AboutUs extends Component {
                 <div className="row center_o1">
                 <div className="col-md-5">
                     <div className="center_o1l">
-                    <h2 className="mb-0">About Us</h2>
+                    <h2 className="mb-0">Giới thiệu</h2>
                     </div>
                 </div>
                 <div className="col-md-7">
                     <div className="center_o1r text-end">
-                    <h6 className="mb-0 col_red"><a href="#">Home</a> <span className="me-2 ms-2 text-light"><i className="fa fa-caret-right align-middle"></i></span> About Us</h6>
+                    <h6 className="mb-0 col_red"><Link to="/">Trang chủ</Link> <span className="me-2 ms-2 text-light"><i className="fa fa-caret-right align-middle"></i></span> Giới thiệu</h6>
                     </div>
                 </div>
                 </div>

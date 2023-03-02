@@ -89,10 +89,10 @@ class PdfPreview extends Component {
                         Page {this.state.pageNumber || (this.state.numPages ? 1 : '--')} of { this.state.numPages || '--'}
                         <ul >
                             <li className="d-inline-block me-2">
-                                  <a className="button" onClick={this.previousPage}> Trang trước</a>
+                                  <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.previousPage}> Trang trước</button>
                             </li>
                             <li className="d-inline-block">
-                                  <a className="button" onClick={this.nextPage}> Trang kế tiếp</a>
+                                  <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.nextPage}> Trang kế tiếp</button>
                             </li>
                         </ul>
                   </div>

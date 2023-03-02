@@ -6,6 +6,7 @@ import PdfPreview from './PdfPreview'
 import { Route, BrowserRouter, Routes, Navigate} from 'react-router-dom';
 import AboutUs from './AboutUs';
 import Contact from './Contact';
+import BookSearching from './BookSearching';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
                 <Route name="file-preview" path="/file-preview/:id" element={<PdfPreview />} />
                 <Route name="about-us" path="/about-us" element={<AboutUs />} />
                 <Route name="contact" path="/contact" element={<Contact />} />
+                <Route name="book-searching" path="/book-searching" element={<BookSearching />} />
                 {/* <Route path='*' element={<Navigate to='/' />} /> */}
           </Routes>
           
