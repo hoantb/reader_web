@@ -70,7 +70,7 @@ class Trend extends Component {
                                                 <i className="fa fa-star"></i>
                                                 <i className="fa fa-star"></i>
                                             </span>
-                                            <p className="mb-0">1 Views</p>
+                                            <p className="mb-0">{book.total_views} Views</p>
                                         </div>
                                     </div>
                                 )
