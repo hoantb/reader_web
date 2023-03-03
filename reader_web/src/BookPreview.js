@@ -229,7 +229,7 @@ class BookPreview extends Component {
                             this.state.book.files && 
                             this.state.book.files.map(
                                 file => (
-                                    <div key={file.id}>
+                                    <div key={"file_" + file.id}>
                                         <h6><Link to={"/file-preview/" + file.id}><i className="fa fa-chevron-right me-1 col_red font_12"></i> {file.title} <span className="pull-right">(12)</span></Link></h6>
                                         <hr />
                                     </div>

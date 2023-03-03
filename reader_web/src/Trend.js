@@ -47,7 +47,7 @@ class Trend extends Component {
                             {/* loop item */}
                             {this.state.books.map(
                                 book => (
-                                    <div className="col-md-3 col-6" key={book.id}>
+                                    <div className="col-md-3 col-6" key={"book_" + book.id}>
                                         <div className="trend_2im clearfix position-relative">
                                             <div className="trend_2im1 clearfix">
                                                 <div className="grid">
