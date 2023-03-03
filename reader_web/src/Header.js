@@ -58,7 +58,7 @@ class Header extends Component {
                                 <div className="input-group">
                                             <input type="text" className="form-control bg-black" placeholder="Tên truyện..." />
                                             <span className="input-group-btn">
-                                                <Link to="/book-searching" className="btn btn text-white bg_red rounded-0 border-0" type="button">
+                                                <Link to="/book-searching?text=abcasd" className="btn btn text-white bg_red rounded-0 border-0" type="button">
                                                 Tìm kiếm</Link>
                                             </span>
                                     </div>
