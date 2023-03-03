@@ -10,7 +10,7 @@ class Trend extends Component {
     }
 
     componentDidMount() {
-        fetch( ConstantsVar.API_URL + "/api/books")
+        fetch( ConstantsVar.API_URL + "/api/books?filter_type=latest")
         .then(res => res.json())
         .then(
             (result) => {
