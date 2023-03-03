@@ -13,31 +13,6 @@ class Popular extends Component {
             </div>
             </div>
             </div>
-            <div className="row popular_1 mt-4">
-            <ul className="nav nav-tabs  border-0 mb-0">
-                <li className="nav-item">
-                    <a href="#home" data-bs-toggle="tab" aria-expanded="false" className="nav-link active">
-                        <span className="d-md-block">JUST ARRIVED</span>
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a href="#profile" data-bs-toggle="tab" aria-expanded="true" className="nav-link">
-                        <span className="d-md-block">POPULAR EVENTS</span>
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a href="#settings" data-bs-toggle="tab" aria-expanded="false" className="nav-link">
-                        <span className="d-md-block">TV SHOWS</span>
-                    </a>
-                </li>
-                <li className="nav-item">
-                    <a href="#settings_o" data-bs-toggle="tab" aria-expanded="false" className="nav-link">
-                        <span className="d-md-block">FREE MOVIES</span>
-                    </a>
-                </li>
-                
-            </ul>
-            </div>
             <div className="popular_2 row mt-4">
             <div className="tab-content">
                 <div className="tab-pane active" id="home">
