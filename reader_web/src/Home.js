@@ -18,8 +18,6 @@ class Home extends Component {
             <Center />
             <Trend />
             <Popular />
-            <Choice />
-            <Upcoming />
             <Footer />
         </div>
     );

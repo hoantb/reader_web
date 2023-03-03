@@ -10,19 +10,18 @@ class Footer extends Component {
                 <div className="container">
                 <div className="row footer_1">
                     <div className="col-md-4">
-                    <div className="footer_1i">
-                    <h3><a className="text-white" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Enjoy Reading</a></h3>
-                    <p className="mt-3">Lorem ipsum dolor sit amet consect etur adi pisicing elit sed do eiusmod tempor incididunt. Lorem ipsum dolor sit amet consect etur. </p>
-                    <h6 className="fw-normal"><i className="fa fa-map-marker fs-5 align-middle col_red me-1"></i> 5311 Ceaver Sidge Td.
-                Pakland, DE 13507</h6>
-                        <h6 className="fw-normal mt-3"><i className="fa fa-envelope fs-5 align-middle col_red me-1"></i> admin@truyenchoban.com</h6>
-                        <h6 className="fw-normal mt-3 mb-0"><i className="fa fa-phone fs-5 align-middle col_red me-1"></i>  +123 123 456</h6>
-                    </div>
-                    </div>
+                        <div className="footer_1i">
+                            <h3><a className="text-white" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Enjoy Reading</a></h3>
+                            <p className="mt-3">Chúc bạn có giây phút thư giãn cũng những bộ truyện hấp dẫn từ truyenchoban.com </p>
+                            <h6 className="fw-normal"><i className="fa fa-map-marker fs-5 align-middle col_red me-1"></i>Thành phố Hồ Chí Minh, Việt Nam</h6>
+                                <h6 className="fw-normal mt-3"><i className="fa fa-envelope fs-5 align-middle col_red me-1"></i> admin@truyenchoban.com</h6>
+                                <h6 className="fw-normal mt-3 mb-0"><i className="fa fa-phone fs-5 align-middle col_red me-1"></i>  +123 123 456</h6>
+                            </div>
+                        </div>
                     <div className="col-md-4">
                     <div className="footer_1i">
-                    <h4>Sign  <span className="col_red">Newsletter</span></h4>
-                    <p className="mt-3">Subscribe to our newsletter list to get latest news and updates from us</p>
+                    <h4>Đăng ký  <span className="col_red">bảng tin</span></h4>
+                    <p className="mt-3">Đăng ký danh sách bản tin của chúng tôi để nhận tin tức và cập nhật truyện mới nhất từ chúng tôi</p>
                     <div className="input-group">
                                 <input type="text" className="form-control bg-black" placeholder="Email" />
                                 <span className="input-group-btn">
