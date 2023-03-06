@@ -1,5 +1,6 @@
 import React, { Component} from "react";
- 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons'
 class Footer extends Component {
 
   render() {
@@ -11,7 +12,7 @@ class Footer extends Component {
                 <div className="row footer_1">
                     <div className="col-md-4">
                         <div className="footer_1i">
-                            <h3><a className="text-white" href="index.html"><i className="fa fa-video-camera col_red me-1"></i> Enjoy Reading</a></h3>
+                            <h3><a className="text-white" href="index.html"><FontAwesomeIcon icon={faBookOpenReader} color="red" /> Enjoy Reading</a></h3>
                             <p className="mt-3">Chúc bạn có giây phút thư giãn cũng những bộ truyện hấp dẫn từ truyenchoban.com </p>
                             <h6 className="fw-normal"><i className="fa fa-map-marker fs-5 align-middle col_red me-1"></i>Thành phố Hồ Chí Minh, Việt Nam</h6>
                                 <h6 className="fw-normal mt-3"><i className="fa fa-envelope fs-5 align-middle col_red me-1"></i> admin@truyenchoban.com</h6>

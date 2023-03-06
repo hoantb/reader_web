@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from 'react-router-dom';
 import * as ConstantsVar from "./common/constants";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBookOpen } from '@fortawesome/free-solid-svg-icons'
 
 class Trend extends Component {
 
@@ -26,7 +28,7 @@ class Trend extends Component {
             <div className="row trend_1">
             <div className="col-md-6 col-6">
             <div className="trend_1l">
-                <h4 className="mb-0"><i className="fa fa-youtube-play align-middle col_red me-1 "></i> Truyện <span className="col_red">mới nhất</span></h4>
+                <h4 className="mb-0"><FontAwesomeIcon icon={faBookOpen} color="red" /> Truyện <span className="col_red">mới nhất</span></h4>
             </div>
             </div>
             <div className="col-md-6 col-6">
