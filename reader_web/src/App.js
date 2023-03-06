@@ -17,7 +17,7 @@ function App() {
                 <Route name="file-preview" path="/file-preview/:id" element={<PdfPreview />} />
                 <Route name="about-us" path="/about-us" element={<AboutUs />} />
                 <Route name="contact" path="/contact" element={<Contact />} />
-                <Route name="book-searching" path="/book-searching" element={<BookSearching />} />
+                <Route name="book-searching" path="/book-searching/:sorted/:name" element={<BookSearching />} />
                 {/* <Route path='*' element={<Navigate to='/' />} /> */}
           </Routes>
           

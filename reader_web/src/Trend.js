@@ -12,7 +12,7 @@ class Trend extends Component {
     }
 
     componentDidMount() {
-        fetch( ConstantsVar.API_URL + "/api/books?filter_type=latest")
+        fetch( ConstantsVar.API_URL + "/api/books?sort-type=latest")
         .then(res => res.json())
         .then(
             (result) => {
@@ -33,7 +33,7 @@ class Trend extends Component {
             </div>
             <div className="col-md-6 col-6">
             <div className="trend_1r text-end">
-                <h6 className="mb-0"><a className="button" href="#"> Xem tất cả</a></h6>
+                <h6 className="mb-0"><Link className="button" to={"/book-searching/" + "latest/*"}> Xem tất cả</Link></h6>
             </div>
             </div>
             </div>

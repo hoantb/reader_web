@@ -2,44 +2,69 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookOpenReader } from '@fortawesome/free-solid-svg-icons'
+import * as ConstantsVar from "./common/constants";
 
 class Header extends Component {
     constructor(props) {
         super(props);
-        // var navbar_sticky = document.getElementById("navbar_sticky");
-        // var sticky = navbar_sticky.offsetTop;
-        // var navbar_height = document.querySelector('.navbar').offsetHeight;
         this.state = {
             sticky: 0,
-            navbar_height: 0
+            navbar_height: 0,
+            categories: [],
+            searchName: ""
         }
         this.navbar_sticky_ref = React.createRef();
 
         this.handleClick = this.handleClick.bind(this);
         this.btnHandleSearch = this.btnHandleSearch.bind(this);
+        this.updateInputValue = this.updateInputValue.bind(this);
+        this.getSearchName = this.getSearchName.bind(this)
     }
     btnHandleSearch () {
         console.log("ok")
     }
     handleClick () {
 
-        if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
-        {
-            this.navbar_sticky_ref.current.classList.add("sticky")
-            document.body.style.paddingTop = this.state.navbar_height + 'px';
-        } 
-        else 
-        {
-            this.navbar_sticky_ref.current.classList.remove("sticky");
-            document.body.style.paddingTop = '0'
-        }
+        // if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
+        // {
+        //     this.navbar_sticky_ref.current.classList.add("sticky")
+        //     document.body.style.paddingTop = this.state.navbar_height + 'px';
+        // } 
+        // else 
+        // {
+        //     this.navbar_sticky_ref.current.classList.remove("sticky");
+        //     document.body.style.paddingTop = '0'
+        // }
         
+    }
+
+    updateInputValue(evt) {
+        const val = evt.target.value;
+        // ...       
+        this.setState({
+          searchName: val
+        });
+    }
+
+    getSearchName() {
+        if (this.state.searchName === "")
+        {
+            return "*"
+        }
+        return this.state.searchName
     }
 
     componentDidMount() {
         window.onscroll = this.handleClick;
         this.setState({sticky: this.navbar_sticky_ref.current.offsetTop})
         this.setState({navbar_height: document.querySelector('.navbar').offsetHeight})
+        fetch( ConstantsVar.API_URL + "/api/book-categories" + "/")
+        .then(res => res.json())
+        .then(
+            (result) => {
+                this.setState({categories: result})
+            }
+        )
     }
     useEffect() {
         
@@ -58,9 +83,9 @@ class Header extends Component {
                         <div className="col-md-5">
                             <div className="top_1m">
                                 <div className="input-group">
-                                            <input type="text" className="form-control bg-black" placeholder="Tên truyện..." />
+                                            <input onChange={evt => this.updateInputValue(evt)} type="text" value={this.state.searchName} className="form-control bg-black" placeholder="Tên truyện..." />
                                             <span className="input-group-btn">
-                                                <Link to="/book-searching?text=abcasd" className="btn btn text-white bg_red rounded-0 border-0" type="button">
+                                                <Link  to={"/book-searching/*/" + this.getSearchName()} className="btn btn text-white bg_red rounded-0 border-0" type="button">
                                                 Tìm kiếm</Link>
                                             </span>
                                     </div>
@@ -101,8 +126,14 @@ class Header extends Component {
                         Thể loại
                         </a>
                         <ul className="dropdown-menu drop_1" aria-labelledby="navbarDropdown">
-                            <li><a className="dropdown-item" href="blog.html">Blog</a></li>
-                            <li><a className="dropdown-item border-0" href="blog_detail.html">Blog Detail</a></li>
+                            {
+                                this.state.categories &&
+                                this.state.categories.map(
+                                    category => (
+                                        <li key={"category_" + category.id}><Link className="dropdown-item">{category.name}</Link></li>
+                                    )
+                                )
+                            }
                         </ul>
                         </li>
                         <li className="nav-item">

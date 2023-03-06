@@ -11,7 +11,7 @@ class Popular extends Component {
     }
 
     componentDidMount() {
-        fetch( ConstantsVar.API_URL + "/api/books?filter_type=popular")
+        fetch( ConstantsVar.API_URL + "/api/books?sort-type=popular")
         .then(res => res.json())
         .then(
             (result) => {

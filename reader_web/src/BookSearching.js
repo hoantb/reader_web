@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import * as ConstantsVar from "./common/constants";
-
+import withRouter from "./withRouter";
 
 class BookSearching extends Component {
     constructor(props) {
@@ -22,19 +22,26 @@ class BookSearching extends Component {
     }
 
     componentDidMount() {
-        console.log("2222222")
-        console.log(this.props.location)
-        fetch( ConstantsVar.API_URL + "/api/books")
+        console.log(this.props.params)
+        let searchName = this.props.params.name
+        let sortType = this.props.params.sorted
+        if (sortType === "*") {
+          sortType = "all"
+        }
+        if (searchName === "*") {
+          searchName = ""
+        }
+        fetch( ConstantsVar.API_URL + "/api/books?sort-type=" + sortType + "&title=" + searchName)
         .then(res => res.json())
         .then(
             (result) => {
                 console.log(result);
                 let totalPages = 0
                 if (result.count % 4 === 0) {
-                    totalPages = result.count / 4
+                    totalPages = Math.floor(result.count / 4 )
                 }
                 else {
-                  totalPages = result.count / 4 + 1
+                  totalPages = Math.floor(result.count / 4) + 1
                 }
                 console.log(totalPages)
                 let pages = []
@@ -166,4 +173,4 @@ class BookSearching extends Component {
     }
 }
  
-export default BookSearching;
+export default withRouter(BookSearching);
