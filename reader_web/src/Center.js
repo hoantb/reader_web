@@ -13,7 +13,7 @@ class Center extends Component {
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                <img src="https://storage.googleapis.com/reader-web-statics/img/2.jpg" className="d-block w-100" alt="..." />
+                <img src="https://storage.googleapis.com/reader-web-statics/img/naruto.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-md-block">
                 <h1 className="font_60"> Naruto</h1>
                 <h6 className="mt-3">
@@ -35,7 +35,7 @@ class Center extends Component {
                 </div>
                 </div>
                 <div className="carousel-item">
-                <img src="https://storage.googleapis.com/reader-web-statics/img/1.jpg" className="d-block w-100" alt="..." />
+                <img src="https://storage.googleapis.com/reader-web-statics/img/doreamon.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-md-block">
                 <h1 className="font_60"> Doreamon</h1>
                 <h6 className="mt-3">
@@ -57,7 +57,7 @@ class Center extends Component {
                 </div>
                 </div>
                 <div className="carousel-item">
-                <img src="https://storage.googleapis.com/reader-web-statics/img/3.jpg" className="d-block w-100" alt="..." />
+                <img src="https://storage.googleapis.com/reader-web-statics/img/one_piece.jpg" className="d-block w-100" alt="..." />
                 <div className="carousel-caption d-md-block">
                 <h1 className="font_60"> One Piece</h1>
                 <h6 className="mt-3">
