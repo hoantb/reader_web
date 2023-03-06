@@ -77,7 +77,7 @@ class Header extends Component {
                     <div className="row top_1">
                         <div className="col-md-3">
                             <div className="top_1l pt-1">
-                                <h3 className="mb-0"><a className="text-white" href="index.html"><FontAwesomeIcon icon={faBookOpenReader} color="red" /> Enjoy Reading</a></h3>
+                                <h3 className="mb-0"><Link className="text-white" to="/"><FontAwesomeIcon icon={faBookOpenReader} color="red" /> Enjoy Reading</Link></h3>
                             </div>
                         </div>
                         <div className="col-md-5">
@@ -109,7 +109,7 @@ class Header extends Component {
             <section id="header">
                 <nav className="navbar navbar-expand-md navbar-light" id="navbar_sticky" ref={this.navbar_sticky_ref}>
                 <div className="container">
-                    <a className="navbar-brand text-white fw-bold" href="index.html"><FontAwesomeIcon icon={faBookOpenReader} color="red" /> Enjoy Reading</a>
+                    <Link className="navbar-brand text-white fw-bold" to="/"><FontAwesomeIcon icon={faBookOpenReader} color="red" /> Enjoy Reading</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>

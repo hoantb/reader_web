@@ -151,7 +151,7 @@ class Contact extends Component {
                 </div>
                 <div className="row contact_3 mt-4">
                 <div className="col-md-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d114964.53925916665!2d-80.29949920266738!3d25.782390733064336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2sMiami%2C+FL%2C+USA!5e0!3m2!1sen!2sin!4v1530774403788" height="450" style={{border: 0, width: "100%", allowFullScreen: ""}}></iframe>
+                    <iframe height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.46147448797!2d106.41434832066398!3d10.754665783522423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1678102698055!5m2!1sen!2s" style={{ width:"100%", border: 0, allowFullScreen: "", loading: "lazy", referrerpolicy: "no-referrer-when-downgrade"}}></iframe>
                 </div>
                 </div>
                 </div>
