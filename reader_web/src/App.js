@@ -7,6 +7,8 @@ import { Route, BrowserRouter, Routes, Navigate} from 'react-router-dom';
 import AboutUs from './AboutUs';
 import Contact from './Contact';
 import BookSearching from './BookSearching';
+import Login from './Login';
+
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
                 <Route name="about-us" path="/about-us" element={<AboutUs />} />
                 <Route name="contact" path="/contact" element={<Contact />} />
                 <Route name="book-searching" path="/book-searching/:sorted/:name" element={<BookSearching />} />
+                <Route name="login" path="/login" element={<Login />} />
                 {/* <Route path='*' element={<Navigate to='/' />} /> */}
           </Routes>
           

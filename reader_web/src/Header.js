@@ -24,18 +24,18 @@ class Header extends Component {
         console.log("ok")
     }
     handleClick () {
-
-        // if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
-        // {
-        //     this.navbar_sticky_ref.current.classList.add("sticky")
-        //     document.body.style.paddingTop = this.state.navbar_height + 'px';
-        // } 
-        // else 
-        // {
-        //     this.navbar_sticky_ref.current.classList.remove("sticky");
-        //     document.body.style.paddingTop = '0'
-        // }
-        
+        if (this.navbar_sticky_ref != null) {
+            if (window.pageYOffset >= this.state.sticky + this.state.navbar_height) 
+            {
+                this.navbar_sticky_ref.current.classList.add("sticky")
+                document.body.style.paddingTop = this.state.navbar_height + 'px';
+            } 
+            else 
+            {
+                this.navbar_sticky_ref.current.classList.remove("sticky");
+                document.body.style.paddingTop = '0'
+            }
+        }
     }
 
     updateInputValue(evt) {
@@ -91,16 +91,6 @@ class Header extends Component {
                                     </div>
                             </div>
                         </div>
-                        <div className="col-md-4">
-                            <div className="top_1r text-end">
-                                <ul className="social-network social-circle mb-0">
-                                        <li><a href="#" className="icoFacebook" title="Facebook"><i className="fa fa-facebook"></i></a></li>
-                                        <li><a href="#" className="icoTwitter" title="Twitter"><i className="fa fa-twitter"></i></a></li>
-                                        <li><a href="#" className="icoGoogle" title="Google +"><i className="fa fa-youtube"></i></a></li>
-                                        <li><a href="#" className="icoLinkedin" title="Linkedin"><i className="fa fa-linkedin"></i></a></li>
-                                </ul>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -137,7 +127,10 @@ class Header extends Component {
                         </ul>
                         </li>
                         <li className="nav-item">
-                        <Link to="/contact" className="nav-link" href="contact.html">Liên hệ</Link>
+                        <Link to="/contact" className="nav-link">Liên hệ</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link to="/login" className="nav-link">Đăng nhập</Link>
                         </li>
                     </ul>
                     </div>

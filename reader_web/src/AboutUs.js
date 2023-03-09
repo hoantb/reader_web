@@ -30,8 +30,10 @@ class AboutUs extends Component {
                 <div className="container-xl">
                 <div className="row about_pg1">
                     <div className="col-md-12">
-                    <h2><span className="col_red">We Are Planet</span><br />
-                Providing Movie Production Services</h2>
+                    <h2>
+                        <span className="col_red">Truyện chờ bạn</span>
+                        <br />Enjoy Reading
+                    </h2>
                     <p className="mt-3 w-50">Providing you with the most actionable Movie Production Services. Planis creates and distribute Video Content.</p>
                     <p className="w-50">Planet Lorem Ipsum is simply dummy text of the printing. Lorem Ipsum is simply Video Content  dummy industry. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
                     <p className="w-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. Aliquam ut elit venenatis, congue dolor ut, mattis leo</p>

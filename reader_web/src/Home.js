@@ -9,7 +9,6 @@ import Footer from "./Footer";
  
 class Home extends Component {
   componentDidMount() {
-      console.log("1111111111111111");
   }
   render() {
     return (
