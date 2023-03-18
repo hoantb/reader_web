@@ -58,7 +58,7 @@ class Popular extends Component {
                         <div>
                             <h5><Link className="col_red" to={"/book-preview/" + this.state.books[0].id}>{this.state.books[0].title}</Link></h5>
                             <h6>Action, Thriller</h6>
-                            <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 49m</span></h6>
+                            <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                             <p>{this.state.books[0].description}</p>
                             <h6 className="mb-0"><Link className="button" to={"/book-preview/" + this.state.books[0].id}> Chi tiết</Link></h6>
                         </div>
@@ -90,7 +90,7 @@ class Popular extends Component {
                                 <div>
                                     <h5><Link className="col_red" to={"/book-preview/" + this.state.books[1].id}>{this.state.books[1].title}</Link></h5>
                                     <h6>Action, Thriller</h6>
-                                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 2h 29m</span></h6>
+                                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                                     <p>{this.state.books[1].description}</p>
                                     <h6 className="mb-0"><a className="button" href="#"> Chi tiết</a></h6>
                                 </div>
@@ -124,7 +124,7 @@ class Popular extends Component {
                         <div>
                             <h5><Link className="col_red" to={"/book-preview/" + this.state.books[2].id}>{this.state.books[2].title}</Link></h5>
                             <h6>Action, Thriller</h6>
-                            <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 59m</span></h6>
+                            <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                             <p>{this.state.books[2].description}</p>
                             <h6 className="mb-0"><Link className="button" to={"/book-preview/" + this.state.books[2].id}> Chi tiết</Link></h6>
                         </div>
@@ -156,7 +156,7 @@ class Popular extends Component {
                             <div>
                                 <h5><Link className="col_red" to={"/book-preview/" + this.state.books[3].id}>{this.state.books[3].title}</Link></h5>
                                 <h6>Action, Thriller</h6>
-                                <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 48m</span></h6>
+                                <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                                 <p>{this.state.books[3].description}</p>
                                 <h6 className="mb-0"><Link className="button" to={"/book-preview/" + this.state.books[3].id}> Chi tiết</Link></h6>
                             </div>
@@ -192,7 +192,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Semp Porta</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 49m</span></h6>
+                    <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -222,7 +222,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Eget Diam</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 2h 29m</span></h6>
+                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -254,7 +254,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Quis Sem</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 59m</span></h6>
+                    <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -284,7 +284,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Ipsum Lorem</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 48m</span></h6>
+                    <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -318,7 +318,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Semp Porta</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 49m</span></h6>
+                    <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -348,7 +348,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Eget Diam</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 2h 29m</span></h6>
+                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -380,7 +380,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Quis Sem</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 59m</span></h6>
+                    <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -410,7 +410,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Ipsum Lorem</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 48m</span></h6>
+                    <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -445,7 +445,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Semp Porta</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 49m</span></h6>
+                    <h6> Imdb 8.2  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -475,7 +475,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Eget Diam</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 2h 29m</span></h6>
+                    <h6> Imdb 8.3  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -507,7 +507,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Quis Sem</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 59m</span></h6>
+                    <h6> Imdb 8.4  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>
@@ -537,7 +537,7 @@ class Popular extends Component {
                     <div className="popular_2i1r">
                     <h5><a className="col_red" href="#">Ipsum Lorem</a></h5>
                     <h6>Action, Thriller</h6>
-                    <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Runtime: 1h 48m</span></h6>
+                    <h6> Imdb 8.6  <span className="ms-2"><i className="fa fa-star col_red me-1"></i></span> Year : 2022 <span className="ms-2">Số tập: 45</span></h6>
                     <p>Four waves of increasingly deadly alien attacks have left most of  ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                     <h6 className="mb-0"><a className="button" href="#"> More Info - Trailer</a></h6>
                     </div>

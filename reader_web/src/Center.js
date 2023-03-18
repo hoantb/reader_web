@@ -52,7 +52,7 @@ class Center extends Component {
                 <p className="mt-3">Four waves of increasingly deadly alien attacks have left most of Earth in ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Starring:</span> Nobita</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Genres:</span> Music</p>
-                <p><span className="col_red me-1 fw-bold">Runtime:</span> 1h 32m</p>	
+                <p><span className="col_red me-1 fw-bold">Số tập:</span> 45</p>	
                 <h6 className="mt-4"><a className="button" href="#"> Watch Trailer</a></h6>
                 </div>
                 </div>
@@ -74,7 +74,7 @@ class Center extends Component {
                 <p className="mt-3">Four waves of increasingly deadly alien attacks have left most of Earth in ruin. Cassie is on the run, desperately trying to save her younger brother.</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Starring:</span> One Piece</p>
                 <p className="mb-2"><span className="col_red me-1 fw-bold">Genres:</span> Music</p>
-                <p><span className="col_red me-1 fw-bold">Runtime:</span> 1h 32m</p>	
+                <p><span className="col_red me-1 fw-bold">Số tập:</span> 45</p>	
                 <h6 className="mt-4 mb-0"><a className="button" href="#"> Watch Trailer</a></h6>
                 </div>
                 </div>
