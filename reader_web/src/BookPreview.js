@@ -125,18 +125,23 @@ class BookPreview extends Component {
                                         <div className="blog_1dt5 row mt-3">
                                             <div className="col-md-6">
                                                 <div className="blog_1dt5l">
-                                                <textarea placeholder="Comment" className="form-control form_text"></textarea>
-                                                <div className="form-check mt-3">
-                                                <input type="checkbox" className="form-check-input" id="customCheck1" />
-                                                <label className="form-check-label" htmlFor="customCheck1">Lưu tên của tôi và email trong trình duyệt này cho lần tiếp theo tôi nhận xét.</label>
-                                            </div>
-                                                <h6 className="mt-3 mb-0"><a className="button" href="#"> Bình luận</a></h6>
+                                                    <input className="form-control" placeholder="Họ và tên" type="text" />
+                                                </div>
+                                                <div className="blog_1dt5l mt-3">
+                                                    <input className="form-control" placeholder="Email" type="text" />
                                                 </div>
                                             </div>
-                                            <div className="col-md-6">
-                                                <div className="blog_1dt5l">
-                                                    <input className="form-control" placeholder="Name" type="text" />
-                                                </div>
+                                        </div>
+                                        <div className="blog_1dt5 row mt-3">
+                                            <div className="col-md-12">
+                                                    <div className="blog_1dt5l">
+                                                        <textarea placeholder="Comment" className="form-control form_text" style={{height: "173px"}}></textarea>
+                                                        <div className="form-check mt-3">
+                                                            <input type="checkbox" className="form-check-input" id="customCheck1" />
+                                                            <label className="form-check-label" htmlFor="customCheck1">Lưu tên của tôi và email trong trình duyệt này cho lần tiếp theo tôi nhận xét.</label>
+                                                        </div>
+                                                        <h6 className="mt-3 mb-0"><a className="button" href="#"> Bình luận</a></h6>
+                                                    </div>
                                             </div>
                                         </div>
                                     </div>
