@@ -94,11 +94,11 @@ class Header extends Component {
                         <div className="col-md-4">
                             <div className="top_1r text-end">
                                 <ul className="social-network social-circle mb-0">
-                                        <li><a target="_blank" href="https://www.instagram.com" className="icoRss" title="Rss"><i className="fa fa-instagram"></i></a></li>
-                                        <li><a target="_blank" href="https://facebook.com" className="icoFacebook" title="Facebook"><i className="fa fa-facebook"></i></a></li>
-                                        <li><a target="_blank" href="https://twitter.com" className="icoTwitter" title="Twitter"><i className="fa fa-twitter"></i></a></li>
-                                        <li><a target="_blank" href="https://google.com" className="icoGoogle" title="Google +"><i className="fa fa-youtube"></i></a></li>
-                                        <li><a target="_blank" href="https://linkedin.com" className="icoLinkedin" title="Linkedin"><i className="fa fa-linkedin"></i></a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com" className="icoRss" title="Rss"><i className="fa fa-instagram"></i></a></li>
+                                    <li><a target="_blank" href="https://facebook.com" className="icoFacebook" title="Facebook"><i className="fa fa-facebook"></i></a></li>
+                                    <li><a target="_blank" href="https://twitter.com" className="icoTwitter" title="Twitter"><i className="fa fa-twitter"></i></a></li>
+                                    <li><a target="_blank" href="https://google.com" className="icoGoogle" title="Google +"><i className="fa fa-youtube"></i></a></li>
+                                    <li><a target="_blank" href="https://linkedin.com" className="icoLinkedin" title="Linkedin"><i className="fa fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -136,10 +136,7 @@ class Header extends Component {
                         </ul>
                         </li>
                         <li className="nav-item">
-                        <Link to="/contact" className="nav-link">Liên hệ</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link to="/login" className="nav-link">Đăng nhập</Link>
+                            <Link to="/contact" className="nav-link">Liên hệ</Link>
                         </li>
                     </ul>
                     </div>
