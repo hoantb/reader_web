@@ -31,7 +31,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/4.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/4.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -54,7 +54,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/5.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/5.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -77,7 +77,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/6.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/6.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -100,7 +100,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/7.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/7.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -123,7 +123,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/8.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/8.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -150,7 +150,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/9.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/9.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -173,7 +173,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/10.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/10.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -196,7 +196,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/11.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/11.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -219,7 +219,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/4.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/4.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -242,7 +242,7 @@ class Stream extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/5.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/5.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>

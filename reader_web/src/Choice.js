@@ -31,7 +31,7 @@ class Choice extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/12.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/12.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -54,7 +54,7 @@ class Choice extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/13.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/13.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -77,7 +77,7 @@ class Choice extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/14.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/14.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -106,7 +106,7 @@ class Choice extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/15.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/15.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -129,7 +129,7 @@ class Choice extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/16.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/16.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -152,7 +152,7 @@ class Choice extends Component {
                     <div className="trend_2im1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/17.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/17.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>

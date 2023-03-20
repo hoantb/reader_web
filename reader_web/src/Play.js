@@ -18,7 +18,7 @@ class Play extends Component {
             <div className="play1l">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/2.jpg" className="w-100" height="450" alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/2.jpg" className="w-100" height="450" alt="abc" /></a>
                             </figure>
                         </div>
             </div>
@@ -28,42 +28,42 @@ class Play extends Component {
                 <div className="play1ri">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/4.jpg" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/4.jpg" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
                 </div>
                 <div className="play1ri mt-3">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/5.jpg" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/5.jpg" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
                 </div>
                 <div className="play1ri mt-3">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/6.jpg" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/6.jpg" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
                 </div>
                 <div className="play1ri mt-3">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/7.jpg" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/7.jpg" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
                 </div>
                 <div className="play1ri mt-3">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/8.jpg" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/8.jpg" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
                 </div>
                 <div className="play1ri mt-3">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/9.jpg" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/9.jpg" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
                 </div>
@@ -75,7 +75,7 @@ class Play extends Component {
             <div className="play2l">
                 <div className="grid clearfix">
                             <figure className="effect-jazz mb-0">
-                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/31.jpg" height="515" className="w-100"  alt="abc" /></a>
+                                <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/31.jpg" height="515" className="w-100"  alt="abc" /></a>
                             </figure>
                         </div>
             </div>

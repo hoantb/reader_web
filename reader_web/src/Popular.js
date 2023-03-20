@@ -176,7 +176,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/22.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/22.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -206,7 +206,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/23.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/23.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -238,7 +238,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/24.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/24.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -268,7 +268,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/25.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/25.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -302,7 +302,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/26.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/26.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -332,7 +332,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/27.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/27.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -364,7 +364,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/28.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/28.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -394,7 +394,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/29.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/29.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -429,7 +429,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/18.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/18.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -459,7 +459,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/19.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/19.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -491,7 +491,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/20.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/20.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
@@ -521,7 +521,7 @@ class Popular extends Component {
                     <div className="popular_2i1lm1 clearfix">
                         <div className="grid">
                     <figure className="effect-jazz mb-0">
-                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/img/21.jpg" className="w-100" alt="img25" /></a>
+                        <a href="#"><img src="https://storage.googleapis.com/reader-web-statics/frontend/img/21.jpg" className="w-100" alt="img25" /></a>
                     </figure>
                 </div>
                     </div>
