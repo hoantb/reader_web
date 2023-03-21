@@ -159,7 +159,7 @@ class PdfPreview extends Component {
                       { this.state.isLoaded &&
                         <div className="d-flex align-items-center justify-content-center">
                             Page {this.state.pageNumber || (this.state.numPages ? 1 : '--')} of { this.state.numPages || '--'}
-                            {this.state.ratio <= 0 &&
+                            {this.state.ratio <= 1 &&
                                 <ul >
                                     <li className="d-inline-block me-2">
                                           <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.previousPage}> Trang trước</button>
@@ -169,7 +169,7 @@ class PdfPreview extends Component {
                                     </li>
                                 </ul>
                             }
-                            {this.state.ratio > 0 &&
+                            {this.state.ratio > 1 &&
                                 <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.toggelFullScreen}> Xem toàn cửa sổ</button>
                             }
                             {
