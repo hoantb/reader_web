@@ -27,13 +27,17 @@ class PdfPreview extends Component {
             numPages: 10,
             render_anotate: false,
             isLoaded:false,
-            width: 500
+            width: 500,
+            height: 800,
+            ratio: 0,
+            toggelFullScreen: false
         };
         this.document_ref = React.createRef()
         this.onDocumentLoadSuccess = this.onDocumentLoadSuccess.bind(this);
         this.changePage = this.changePage.bind(this);
         this.previousPage = this.previousPage.bind(this);
         this.nextPage = this.nextPage.bind(this);
+        this.toggelFullScreen = this.toggelFullScreen.bind(this)
   }
 
   onDocumentLoadSuccess({ numPages }) {
@@ -45,10 +49,33 @@ class PdfPreview extends Component {
       )
   }
 
+  toggelFullScreen(evt)
+  {
+      
+      let toggel = !this.state.toggelFullScreen;
+      
+      if (toggel) {
+        this.setState({toggelFullScreen: toggel, height: window.innerHeight, ratio: window.innerWidth / window.innerHeight})
+        this.setState({height: window.innerHeight + 200})
+        this.setState({ratio: window.innerWidth / window.innerHeight})
+        evt.target.innerHTML = "Thoát toàn cửa sổ"
+      }
+      else {
+        this.setState({toggelFullScreen: toggel, width: window.innerWidth, ratio: window.innerWidth / window.innerHeight})
+        this.setState({height: window.innerHeight})
+        this.setState({ratio: window.innerWidth / window.innerHeight})
+        evt.target.innerHTML = "Xem toàn cửa sổ"
+      }
+  }
+
   changePage(offset) {
-    this.setState({
-        pageNumber: this.state.pageNumber + offset
-    })
+    if (this.state.pageNumber + offset > 0 && this.state.pageNumber + offset < this.state.numPages)
+    {
+        this.setState({
+            pageNumber: this.state.pageNumber + offset
+        })
+    }
+    
   }
   
   previousPage() {
@@ -60,8 +87,7 @@ class PdfPreview extends Component {
   }
 
   componentDidMount() {
-      //this.state.width = window.innerWidth;
-      console.log(window.innerWidth)
+      console.log(window.innerWidth / window.innerHeight)
       pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
       console.log(this.props.params)
       fetch( ConstantsVar.API_URL + "/api/files" + "/" + this.props.params.id)
@@ -69,7 +95,7 @@ class PdfPreview extends Component {
       .then(
           (result) => {
               console.log(result);
-              this.setState({file: result, width: window.innerWidth})
+              this.setState({file: result, width: window.innerWidth, height:window.innerHeight, ratio: window.innerWidth / window.innerHeight})
           }
       )
       // console.log(this.document_ref.current.classList)
@@ -78,27 +104,48 @@ class PdfPreview extends Component {
   render() {
     return (
       <div>
-        <Header />
+          {!this.state.toggelFullScreen &&
+              <Header />
+          }
           <section id="center" className="center_home">
               <div className="carousel-inner">
                       {this.state.file &&
                         <div className="d-flex align-items-center justify-content-center col-md-12">
+                            <button className="carousel-control-prev" type="button" onClick={this.previousPage}>
+                                <span className="carousel-control-prev-icon" aria-hidden="true" ></span>
+                                <span className="visually-hidden">Previous</span>
+                            </button>
+                            <button className="carousel-control-next" type="button" onClick={this.nextPage}>
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
+                            </button>
                             <Document className="centerPdf" loading="Đang tải truyện vui lòng chờ..." file={this.state.file.file} onLoadSuccess={ this.onDocumentLoadSuccess }>
-                                <Page className="centerPdf" width={this.state.width} pageNumber={this.state.pageNumber} renderAnnotationLayer={this.state.render_anotate} renderForms={this.state.render_anotate} renderTextLayer={this.state.render_anotate}/>
+                                {this.state.ratio > 0 &&
+                                    <Page className="centerPdf" height={this.state.height - 200} pageNumber={this.state.pageNumber} renderAnnotationLayer={this.state.render_anotate} renderForms={this.state.render_anotate} renderTextLayer={this.state.render_anotate}/>
+                                }
+                                {
+                                  this.state.ratio <=0 &&
+                                    <Page className="centerPdf" width={this.state.width} pageNumber={this.state.pageNumber} renderAnnotationLayer={this.state.render_anotate} renderForms={this.state.render_anotate} renderTextLayer={this.state.render_anotate}/>
+                                }
                             </Document>
                         </div>
                       }
                       { this.state.isLoaded &&
-                        <div className="centerButtonPdf">
+                        <div className="d-flex align-items-center justify-content-center">
                             Page {this.state.pageNumber || (this.state.numPages ? 1 : '--')} of { this.state.numPages || '--'}
-                            <ul >
-                                <li className="d-inline-block me-2">
-                                      <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.previousPage}> Trang trước</button>
-                                </li>
-                                <li className="d-inline-block">
-                                      <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.nextPage}> Trang kế tiếp</button>
-                                </li>
-                            </ul>
+                            {this.state.ratio <= 0 &&
+                                <ul >
+                                    <li className="d-inline-block me-2">
+                                          <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.previousPage}> Trang trước</button>
+                                    </li>
+                                    <li className="d-inline-block">
+                                          <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.nextPage}> Trang kế tiếp</button>
+                                    </li>
+                                </ul>
+                            }
+                            {this.state.ratio > 0 &&
+                                <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.toggelFullScreen}> Xem toàn cửa sổ</button>
+                            }
                       </div>
                   
                       }
