@@ -159,24 +159,28 @@ class PdfPreview extends Component {
                       { this.state.isLoaded &&
                         <div className="d-flex align-items-center justify-content-center">
                             Page {this.state.pageNumber || (this.state.numPages ? 1 : '--')} of { this.state.numPages || '--'}
-                            {this.state.ratio <= 1 &&
-                                <ul >
-                                    <li className="d-inline-block me-2">
-                                          <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.previousPage}> Trang trước</button>
-                                    </li>
-                                    <li className="d-inline-block">
-                                          <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.nextPage}> Trang kế tiếp</button>
-                                    </li>
-                                </ul>
-                            }
-                            {this.state.ratio > 1 &&
-                                <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.toggelFullScreen}> Xem toàn cửa sổ</button>
-                            }
-                            {
-                              this.state.currentPage &&
-                              this.state.currentPage.audio &&
-                              <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.playSound}> Doc trang</button>
-                            }
+                            <div className="d-flex align-items-center justify-content-center">
+                                {this.state.ratio <= 1 &&
+                                    <ul >
+                                        <li className="d-inline-block me-2">
+                                              <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.previousPage}> Trang trước</button>
+                                        </li>
+                                        <li className="d-inline-block">
+                                              <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.nextPage}> Trang kế tiếp</button>
+                                        </li>
+                                    </ul>
+                                }
+                                {this.state.ratio > 1 &&
+                                    <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.toggelFullScreen}> Xem toàn cửa sổ</button>
+                                }
+                            </div>
+                            <div className="d-flex align-items-center justify-content-center">
+                                {
+                                  this.state.currentPage &&
+                                  this.state.currentPage.audio &&
+                                  <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.playSound}> Doc trang</button>
+                                }
+                            </div>
                       </div>
                   
                       }
