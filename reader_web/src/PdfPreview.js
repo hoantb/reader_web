@@ -146,11 +146,11 @@ class PdfPreview extends Component {
                                 <span className="visually-hidden">Next</span>
                             </button>
                             <Document className="centerPdf" loading="Đang tải truyện vui lòng chờ..." file={this.state.file.file} onLoadSuccess={ this.onDocumentLoadSuccess }>
-                                {this.state.ratio > 0 &&
+                                {this.state.ratio > 1 &&
                                     <Page className="centerPdf" height={this.state.height - 200} pageNumber={this.state.pageNumber} renderAnnotationLayer={this.state.render_anotate} renderForms={this.state.render_anotate} renderTextLayer={this.state.render_anotate}/>
                                 }
                                 {
-                                  this.state.ratio <=0 &&
+                                  this.state.ratio <= 1 &&
                                     <Page className="centerPdf" width={this.state.width} pageNumber={this.state.pageNumber} renderAnnotationLayer={this.state.render_anotate} renderForms={this.state.render_anotate} renderTextLayer={this.state.render_anotate}/>
                                 }
                             </Document>
