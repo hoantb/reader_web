@@ -65,12 +65,6 @@ class BookPreview extends Component {
                                                     </figure>
                                                 </div>
                                             </div>
-                                            <div className="popular_2i1lm2 position-absolute top-0 w-100 text-center clearfix">
-                                                <ul>
-                                                <li className="d-inline-block"><a href="#"><i className="fa fa-link col_red"></i></a></li>
-                                                <li className="d-inline-block"><a href="#"><i className="fa fa-search col_red"></i></a></li>
-                                                </ul>
-                                            </div>
                                         </div>
                                         <div className="blog_1l1i mt-3">
                                             <h5><i className="fa fa-folder-open col_red me-1"></i> Giới thiệu truyện</h5>
