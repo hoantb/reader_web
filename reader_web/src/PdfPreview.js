@@ -135,6 +135,13 @@ class PdfPreview extends Component {
           }
           <section id="center" className="center_home">
               <div className="carousel-inner">
+                      <div className="centerButtonPdf">
+                                {
+                                  this.state.currentPage &&
+                                  this.state.currentPage.audio &&
+                                  <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.playSound}> Doc trang</button>
+                                }
+                      </div>
                       {this.state.file &&
                         <div className="d-flex align-items-center justify-content-center col-md-12">
                             <button className="carousel-control-prev" type="button" onClick={this.previousPage}>
@@ -174,13 +181,7 @@ class PdfPreview extends Component {
                                     <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.toggelFullScreen}> Xem toàn cửa sổ</button>
                                 }
                             </div>
-                            <div className="centerButtonPdf">
-                                {
-                                  this.state.currentPage &&
-                                  this.state.currentPage.audio &&
-                                  <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.playSound}> Doc trang</button>
-                                }
-                            </div>
+                            
                       </div>
                   
                       }
