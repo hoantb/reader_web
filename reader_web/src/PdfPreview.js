@@ -30,14 +30,17 @@ class PdfPreview extends Component {
             width: 500,
             height: 800,
             ratio: 0,
-            toggelFullScreen: false
+            toggelFullScreen: false,
+            currentPage: null
         };
         this.document_ref = React.createRef()
         this.onDocumentLoadSuccess = this.onDocumentLoadSuccess.bind(this);
         this.changePage = this.changePage.bind(this);
         this.previousPage = this.previousPage.bind(this);
         this.nextPage = this.nextPage.bind(this);
-        this.toggelFullScreen = this.toggelFullScreen.bind(this)
+        this.toggelFullScreen = this.toggelFullScreen.bind(this);
+        this.getPage = this.getPage.bind(this);
+        this.playSound = this.playSound.bind(this);
   }
 
   onDocumentLoadSuccess({ numPages }) {
@@ -69,11 +72,15 @@ class PdfPreview extends Component {
   }
 
   changePage(offset) {
-    if (this.state.pageNumber + offset > 0 && this.state.pageNumber + offset < this.state.numPages)
+    let num = this.state.pageNumber + offset
+    if (num > 0 && num < this.state.numPages)
     {
+        let page = this.getPage(num);
+        console.log(page);
         this.setState({
-            pageNumber: this.state.pageNumber + offset
-        })
+          pageNumber: num,
+          currentPage: page
+      })
     }
     
   }
@@ -99,6 +106,25 @@ class PdfPreview extends Component {
           }
       )
       // console.log(this.document_ref.current.classList)
+  }
+
+  getPage(num) {
+    let pages = this.state.file.pages;
+    console.log(pages.length)
+    for (let i = 0; i < pages.length; i++ )
+    {
+        console.log(pages[i])
+        if (pages[i]["number"] == num) {
+            return pages[i];
+        }
+    }
+    return null;
+  }
+
+  playSound() {
+    let currentPage = this.state.currentPage;
+    let audio = new Audio(currentPage.audio);
+    audio.play();
   }
   
   render() {
@@ -145,6 +171,11 @@ class PdfPreview extends Component {
                             }
                             {this.state.ratio > 0 &&
                                 <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.toggelFullScreen}> Xem toàn cửa sổ</button>
+                            }
+                            {
+                              this.state.currentPage &&
+                              this.state.currentPage.audio &&
+                              <button className="btn btn text-white bg_red rounded-0 border-0" type="button" onClick={this.playSound}> Doc trang</button>
                             }
                       </div>
                   
