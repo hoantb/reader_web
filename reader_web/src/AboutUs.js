@@ -31,7 +31,7 @@ class AboutUs extends Component {
                 <div className="row about_pg1">
                     <div className="col-md-12">
                     <h2>
-                        <span className="col_red">Truyện chờ bạn</span>
+                        <span className="col_red">It Truyện</span>
                         <br />Enjoy Reading
                     </h2>
                     <p className="mt-3 w-50">Providing you with the most actionable Movie Production Services. Planis creates and distribute Video Content.</p>
