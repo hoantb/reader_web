@@ -5,7 +5,7 @@ import withRouter from "./withRouter";
 import { Document, Page,pdfjs } from 'react-pdf';
 import Center from './Center'
 import Header from "./Header";
-import './PdfPreview.css'
+//import './PdfPreview.css'
 import Footer from "./Footer";
 
 // const styles = StyleSheet.create({
@@ -135,7 +135,7 @@ class PdfPreview extends Component {
           }
           <section id="center" className="center_home">
               <div className="carousel-inner">
-                      <div className="centerButtonPdf">
+                      <div >
                                 {
                                   this.state.currentPage &&
                                   this.state.currentPage.audio &&
@@ -166,7 +166,7 @@ class PdfPreview extends Component {
                       { this.state.isLoaded &&
                         <div className="d-flex align-items-center justify-content-center">
                             Page {this.state.pageNumber || (this.state.numPages ? 1 : '--')} of { this.state.numPages || '--'}
-                            <div className="centerButtonPdf">
+                            <div>
                                 {this.state.ratio <= 1 &&
                                     <ul >
                                         <li className="d-inline-block me-2">
