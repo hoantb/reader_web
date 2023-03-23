@@ -3,7 +3,7 @@ import './App.css';
 import Home from './Home';
 import BookPreview from './BookPreview';
 import PdfPreview from './PdfPreview'
-import { Route, BrowserRouter, Routes, Navigate} from 'react-router-dom';
+import { Route, BrowserRouter, Routes} from 'react-router-dom';
 import AboutUs from './AboutUs';
 import Contact from './Contact';
 import BookSearching from './BookSearching';
