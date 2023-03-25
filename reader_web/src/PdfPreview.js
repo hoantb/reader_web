@@ -95,7 +95,7 @@ class PdfPreview extends Component {
 
   componentDidMount() {
       console.log(window.innerWidth / window.innerHeight)
-      //pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+      pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
       console.log(this.props.params)
       fetch( ConstantsVar.API_URL + "/api/files" + "/" + this.props.params.id)
       .then(res => res.json())
