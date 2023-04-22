@@ -18,7 +18,6 @@ class Header extends Component {
         this.handleClick = this.handleClick.bind(this);
         this.btnHandleSearch = this.btnHandleSearch.bind(this);
         this.updateInputValue = this.updateInputValue.bind(this);
-        this.getSearchName = this.getSearchName.bind(this)
     }
     btnHandleSearch () {
     }
@@ -48,14 +47,6 @@ class Header extends Component {
         this.setState({
           searchName: val
         });
-    }
-
-    getSearchName() {
-        if (this.state.searchName === "")
-        {
-            return "*"
-        }
-        return this.state.searchName
     }
 
     componentDidMount() {
@@ -89,7 +80,7 @@ class Header extends Component {
                                 <div className="input-group">
                                             <input onChange={evt => this.updateInputValue(evt)} type="text" value={this.state.searchName} className="form-control bg-black" placeholder="Tên truyện..." />
                                             <span className="input-group-btn">
-                                                <Link  to={"/book-searching/search/" + this.getSearchName()} className="btn btn text-white bg_red rounded-0 border-0" type="button">
+                                                <Link  to={"/book-searching/search/" + this.state.searchName} className="btn btn text-white bg_red rounded-0 border-0" type="button">
                                                 Tìm kiếm</Link>
                                             </span>
                                     </div>

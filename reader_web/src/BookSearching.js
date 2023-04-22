@@ -13,22 +13,33 @@ class BookSearching extends Component {
             books: [],
             currentPage: 1,
             pages: [],
-            eachPage: 4
+            eachPage: 4,
+            searchName: this.props.params.name,
+            sortType: this.props.params.category
         }
 
         this.changePage = this.changePage.bind(this);
         this.nextPage = this.nextPage.bind(this);
-        this.previousPage = this.previousPage(this)
-
+        this.previousPage = this.previousPage.bind(this)
+        this.getPage = this.getPage.bind(this)
     }
 
     componentDidMount() {
-        console.log(this.props.params)
-        let searchName = "";
-        if (this.props.params.name != null && this.props.params.name != undefined) {
-            searchName = this.props.params.name;
+        this.getPage(1, this.state.searchName)
+    }
+
+    getPage(page, searchName) {
+        let sortType = "";
+        if (this.props.params.category) {
+            sortType = this.props.params.category;
         }
-        fetch( ConstantsVar.API_URL + "/api/books?sort-type=" + this.props.params.sortType + "&title=" + searchName)
+
+        let search = "";
+        if (searchName) {
+            search = searchName;
+        }
+        
+        fetch( ConstantsVar.API_URL + "/api/books?page=" + page.toString() + "&sort-type=" + sortType + "&title=" + search)
         .then(res => res.json())
         .then(
             (result) => {
@@ -44,47 +55,40 @@ class BookSearching extends Component {
                 {
                     pages.push(i + 1)
                 }
-                this.setState({books: result.results, pages: pages})
+                this.setState({books: result.results, pages: pages, currentPage: page, searchName: searchName})
             }
         )
     }
 
     nextPage() {
-
+        if (this.state.currentPage < this.state.pages.length &&  this.state.currentPage >= 1) {
+            this.getPage(this.state.currentPage + 1, this.state.searchName)
+        }
     }
 
     previousPage() {
-
-
+        if (this.state.currentPage > 1 && this.state.currentPage <= this.state.pages.length) {
+            this.getPage(this.state.currentPage - 1, this.state.searchName)
+        }
     }
 
     changePage(event) {
-        // fetch( ConstantsVar.API_URL + "/api/books")
-        // .then(res => res.json())
-        // .then(
-        //     (result) => {
-        //         let totalPages = 0
-        //         if (result.count % 4 === 0) {
-        //             totalPages = result.count / 4
-        //         }
-        //         else {
-        //           totalPages = result.count / 4 + 1
-        //         }
-        //         let pages = []
-        //         for (let i = 0; i < totalPages; i ++)
-        //         {
-        //             pages.push(i + 1)
-        //         }
-        //         this.setState({books: result.results, pages: pages})
-        //     }
-        // )
+        let page = parseInt(event.target.innerHTML);
+        if (page != this.state.currentPage && page >= 1 && page <= this.state.pages.length) {
+            this.getPage(page, this.state.searchName);
+        }
     }
 
     render() {
       return (
           <div>
-              <Header />
-              <section id="center" className="center_o pt-2 pb-2">
+                {   
+                    this.props.params.name &&
+                    this.state.searchName != this.props.params.name &&
+                    this.getPage(1, this.props.params.name)
+                }
+                <Header />
+                <section id="center" className="center_o pt-2 pb-2">
                 <div className="container-xl">
                   <div className="row center_o1">
                   <div className="col-md-5">
@@ -145,9 +149,12 @@ class BookSearching extends Component {
                           {
                               this.state.pages &&
                               this.state.pages.map(
-                                  page => (
-                                      <li key={"page_" + page}><Link className="act" onClick={ (e) => this.changePage(e)}>{page}</Link></li>
-                                  )
+                                    (page, index) => (
+                                        this.state.currentPage == index + 1 ?
+                                        <li key={"page_" + page}><Link className="act" onClick={this.changePage}>{page}</Link></li>
+                                        :
+                                        <li key={"page_" + page}><Link onClick={this.changePage}>{page}</Link></li>
+                                    )
                               )
                           }
                       <li><Link onClick={this.nextPage}><i className="fa fa-chevron-right"></i></Link></li>
