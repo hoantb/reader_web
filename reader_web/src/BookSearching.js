@@ -12,7 +12,8 @@ class BookSearching extends Component {
         this.state = {
             books: [],
             currentPage: 1,
-            pages: []
+            pages: [],
+            eachPage: 4
         }
 
         this.changePage = this.changePage.bind(this);
@@ -23,33 +24,26 @@ class BookSearching extends Component {
 
     componentDidMount() {
         console.log(this.props.params)
-        let searchName = this.props.params.name
-        let sortType = this.props.params.sorted
-        if (sortType === "*") {
-          sortType = "all"
+        let searchName = "";
+        if (this.props.params.name != null && this.props.params.name != undefined) {
+            searchName = this.props.params.name;
         }
-        if (searchName === "*") {
-          searchName = ""
-        }
-        fetch( ConstantsVar.API_URL + "/api/books?sort-type=" + sortType + "&title=" + searchName)
+        fetch( ConstantsVar.API_URL + "/api/books?sort-type=" + this.props.params.sortType + "&title=" + searchName)
         .then(res => res.json())
         .then(
             (result) => {
-                console.log(result);
                 let totalPages = 0
-                if (result.count % 4 === 0) {
-                    totalPages = Math.floor(result.count / 4 )
+                if (result.count % this.state.eachPage === 0) {
+                    totalPages = Math.floor(result.count / this.state.eachPage )
                 }
                 else {
-                  totalPages = Math.floor(result.count / 4) + 1
+                  totalPages = Math.floor(result.count / this.state.eachPage) + 1
                 }
-                console.log(totalPages)
                 let pages = []
                 for (let i = 0; i < totalPages; i ++)
                 {
                     pages.push(i + 1)
                 }
-                console.log(pages)
                 this.setState({books: result.results, pages: pages})
             }
         )
@@ -65,8 +59,6 @@ class BookSearching extends Component {
     }
 
     changePage(event) {
-        console.log(event)
-        console.log(event.target.innerHTML)
         // fetch( ConstantsVar.API_URL + "/api/books")
         // .then(res => res.json())
         // .then(

@@ -21,7 +21,6 @@ class Header extends Component {
         this.getSearchName = this.getSearchName.bind(this)
     }
     btnHandleSearch () {
-        console.log("ok")
     }
     handleClick () {
         if (this.navbar_sticky_ref != null) {
@@ -90,7 +89,7 @@ class Header extends Component {
                                 <div className="input-group">
                                             <input onChange={evt => this.updateInputValue(evt)} type="text" value={this.state.searchName} className="form-control bg-black" placeholder="Tên truyện..." />
                                             <span className="input-group-btn">
-                                                <Link  to={"/book-searching/*/" + this.getSearchName()} className="btn btn text-white bg_red rounded-0 border-0" type="button">
+                                                <Link  to={"/book-searching/search/" + this.getSearchName()} className="btn btn text-white bg_red rounded-0 border-0" type="button">
                                                 Tìm kiếm</Link>
                                             </span>
                                     </div>

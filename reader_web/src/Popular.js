@@ -15,7 +15,6 @@ class Popular extends Component {
         .then(res => res.json())
         .then(
             (result) => {
-                console.log(result);
                 this.setState({books: result.results})
             }
         )

@@ -18,9 +18,11 @@ function App() {
                 <Route name="file-preview" path="/file-preview/:id" element={<PdfPreview />} />
                 <Route name="about-us" path="/about-us" element={<AboutUs />} />
                 <Route name="contact" path="/contact" element={<Contact />} />
-                <Route name="book-searching" path="/book-searching/:sorted/:name" element={<BookSearching />} />
                 <Route name="login" path="/login" element={<Login />} />
-                {/* <Route path='*' element={<Navigate to='/' />} /> */}
+                <Route exact path="book-searching" element={<BookSearching />} >
+                    <Route exact path="filter/:category?" element={<BookSearching />} ></Route>
+                    <Route exact path="search/:name?" element={<BookSearching />} ></Route>
+                </Route>
           </Routes>
           
       </BrowserRouter>

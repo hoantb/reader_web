@@ -76,7 +76,6 @@ class PdfPreview extends Component {
     if (num > 0 && num < this.state.numPages)
     {
         let page = this.getPage(num);
-        console.log(page);
         this.setState({
           pageNumber: num,
           currentPage: page
@@ -94,14 +93,11 @@ class PdfPreview extends Component {
   }
 
   componentDidMount() {
-      console.log(window.innerWidth / window.innerHeight)
       pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
-      console.log(this.props.params)
       fetch( ConstantsVar.API_URL + "/api/files" + "/" + this.props.params.id)
       .then(res => res.json())
       .then(
           (result) => {
-              console.log(result);
               this.setState({file: result, width: window.innerWidth, height:window.innerHeight, ratio: window.innerWidth / window.innerHeight})
           }
       )
@@ -110,10 +106,8 @@ class PdfPreview extends Component {
 
   getPage(num) {
     let pages = this.state.file.pages;
-    console.log(pages.length)
     for (let i = 0; i < pages.length; i++ )
     {
-        console.log(pages[i])
         if (pages[i]["number"] == num) {
             return pages[i];
         }
@@ -134,7 +128,6 @@ class PdfPreview extends Component {
               <Header />
           }
           <section id="center" className="center_home">
-              <div className="carousel-inner">
                       <div >
                                 {
                                   this.state.currentPage &&
@@ -185,7 +178,6 @@ class PdfPreview extends Component {
                       </div>
                   
                       }
-                  </div>
             </section>
       </div>
     )
