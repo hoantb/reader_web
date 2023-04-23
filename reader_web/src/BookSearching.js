@@ -10,9 +10,9 @@ class BookSearching extends Component {
         super(props);
 
         this.state = {
-            books: [],
+            books: null,
             currentPage: 1,
-            pages: [],
+            pages: null,
             eachPage: 4,
             searchName: this.props.params.name,
             sortType: this.props.params.category
@@ -26,6 +26,7 @@ class BookSearching extends Component {
 
     componentDidMount() {
         this.getPage(1, this.state.searchName)
+        console.log(this.state.books)
     }
 
     getPage(page, searchName) {
@@ -144,21 +145,25 @@ class BookSearching extends Component {
                   </div>
                   <div className="pages">
                     <div className="col-md-12">
-                      <ul className="mb-0">
-                      <li><Link onClick={this.previousPage}><i className="fa fa-chevron-left"></i></Link></li>
-                          {
-                              this.state.pages &&
-                              this.state.pages.map(
-                                    (page, index) => (
-                                        this.state.currentPage == index + 1 ?
-                                        <li key={"page_" + page}><Link className="act" onClick={this.changePage}>{page}</Link></li>
-                                        :
-                                        <li key={"page_" + page}><Link onClick={this.changePage}>{page}</Link></li>
+                            <ul className="mb-0">
+                                <li>
+                                    <Link onClick={this.previousPage}><i className="fa fa-chevron-left"></i></Link>
+                                </li> 
+                                {
+                                    this.state.pages &&
+                                    this.state.pages.map(
+                                            (page, index) => (
+                                                this.state.currentPage == index + 1 ?
+                                                <li key={"page_" + page}><Link className="act" onClick={this.changePage}>{page}</Link></li>
+                                                :
+                                                <li key={"page_" + page}><Link onClick={this.changePage}>{page}</Link></li>
+                                            )
                                     )
-                              )
-                          }
-                      <li><Link onClick={this.nextPage}><i className="fa fa-chevron-right"></i></Link></li>
-                      </ul>
+                                }
+                                <li>
+                                    <Link onClick={this.nextPage}><i className="fa fa-chevron-right"></i></Link>
+                                </li>
+                            </ul>
                     </div>
                   </div>
                   </div>
