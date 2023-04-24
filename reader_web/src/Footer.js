@@ -15,9 +15,9 @@ class Footer extends Component {
                         <div className="footer_1i">
                             <h3><Link to="/" className="text-white"><FontAwesomeIcon icon={faBookOpenReader} color="red" /> Enjoy Reading</Link></h3>
                             <p className="mt-3">Chúc bạn có giây phút thư giãn cũng những bộ truyện hấp dẫn từ ittruyen.com </p>
-                            <h6 className="fw-normal"><i className="fa fa-map-marker fs-5 align-middle col_red me-1"></i>Thành phố Hồ Chí Minh, Việt Nam</h6>
+                            <h6 className="fw-normal"><i className="fa fa-map-marker fs-5 align-middle col_red me-1"></i>Nguyễn Hiến Lê, Phường 13, Quận Tân Bình, TP HCM</h6>
                                 <h6 className="fw-normal mt-3"><i className="fa fa-envelope fs-5 align-middle col_red me-1"></i> admin@ittruyen.com</h6>
-                                <h6 className="fw-normal mt-3 mb-0"><i className="fa fa-phone fs-5 align-middle col_red me-1"></i>  +123 123 456</h6>
+                                <h6 className="fw-normal mt-3 mb-0"><i className="fa fa-phone fs-5 align-middle col_red me-1"></i>  0342 185 187</h6>
                             </div>
                         </div>
                     <div className="col-md-6">

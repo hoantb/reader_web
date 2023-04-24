@@ -37,8 +37,8 @@ class Contact extends Component {
                     </div>
                     <div className="col-md-10 col-10">
                     <div className="contact_1ir">
-                    <h5 className="col_red">Company Address</h5>
-                    <p className="mb-0">5311 Ceaver Sidge Td. Pakland, DE 13507</p>
+                    <h5 className="col_red">Địa Chỉ</h5>
+                    <p className="mb-0">Nguyễn Hiến Lê, Phường 13, Quận Tân Bình, TP HCM</p>
                     </div>
                     </div>
                     </div>
@@ -52,9 +52,9 @@ class Contact extends Component {
                     </div>
                     <div className="col-md-10 col-10">
                     <div className="contact_1ir">
-                    <h5 className="col_red">Office Hours</h5>
-                    <p className="mb-0">Monday To Saturday - 10.00 - 07.00</p>
-                    <p className="mb-0">Sunday - Closed</p>
+                    <h5 className="col_red">Giờ Làm Việc</h5>
+                    <p className="mb-0">Thứ 2 - Thứ 7</p>
+                    <p className="mb-0">8.00AM - 06.00PM</p>
                     </div>
                     </div>
                     </div>
@@ -69,8 +69,8 @@ class Contact extends Component {
                     <div className="col-md-10 col-10">
                     <div className="contact_1ir">
                     <h5 className="col_red">E-mail</h5>
-                    <p className="mb-0">info@gmail.com</p>
-                    <p className="mb-0">info@gmail.com</p>
+                    <p className="mb-0">admin@ittruyen.com</p>
+                    <p className="mb-0">hoan.buithanh91@gmail.com</p>
                     </div>
                     </div>
                     </div>
@@ -84,9 +84,8 @@ class Contact extends Component {
                     </div>
                     <div className="col-md-10 col-10">
                     <div className="contact_1ir">
-                    <h5 className="col_red">Phone Numbers</h5>
-                    <p className="mb-0">+123 123 456</p>
-                    <p className="mb-0">+123 123 456</p>
+                    <h5 className="col_red">Điện Thoại</h5>
+                    <p className="mb-0">0342 185 187</p>
                     </div>
                     </div>
                     </div>
@@ -95,33 +94,31 @@ class Contact extends Component {
                 <div className="row contact_2 mt-4">
                 <div className="col-md-3">
                     <div className="contact_2r">
-                    <h5 className="mb-3">LONDON OFFICE</h5>
-                    <p><i className="fa fa-car col_red me-1"></i> 111 Queen Sv, WIC 1, India</p>
-                    <p><i className="fa fa-phone col_red me-1"></i> +123 123 456</p>
-                    <p><i className="fa fa-globe col_red me-1"></i> <a href="#">info@gmail.com</a></p>
-                        <p><i className="fa fa-envelope col_red me-1"></i> <a href="#">info@gmail.com</a></p>
-                        <h5 className="mb-3 mt-4">BUSINESS HOURS</h5>
-                        <p>Hotline is available for 24 hours a day!..</p>
-                        <p>Monday – Friday : <span className="fw-bold text-white">9am to 7pm</span></p>
-                        <p>Saturday : <span className="fw-bold text-white">11am to 3pm</span></p>
-                        <p>Sunday : <span className="fw-bold text-white">Closed</span></p>
+                    <h5 className="mb-3">Văn Phòng HCM</h5>
+                    <p><i className="fa fa-car col_red me-1"></i> Nguyễn Hiến Lê, Phường 13, Quận Tân Bình</p>
+                    <p><i className="fa fa-phone col_red me-1"></i> 0342 185 187</p>
+                    <p><i className="fa fa-globe col_red me-1"></i> <Link href="#">admin@ittruyen.com</Link></p>
+                        <p><i className="fa fa-envelope col_red me-1"></i> <Link href="#">hoan.buithanh91@gmail.com</Link></p>
+                        <h5 className="mb-3 mt-4">Giờ Làm Việc</h5>
+                        <p>Đường dây nóng hoạt động 24/24!..</p>
+                        <p>Thứ 2 - Thứ 7 : <span className="fw-bold text-white">8AM - 6PM</span></p>
                     </div>
                 </div>
                 <div className="col-md-9">
                     <div className="contact_2l row">
                     <div className="col-md-12">
-                    <h4>GET IN TOUCH</h4>
+                    <h4>Tin Nhắn Góp Ý</h4>
                     </div> 
                     </div>
                     <div className="contact_2l1 mt-3 row">
                     <div className="col-md-6">
                     <div className="contact_2l1i">
-                        <input className="form-control" placeholder="Name*" type="text"/>
+                        <input className="form-control" placeholder="Họ Và Tên*" type="text"/>
                     </div>
                     </div> 
                     <div className="col-md-6">
                     <div className="contact_2l1i">
-                        <input className="form-control" placeholder="Email*" type="text"/>
+                        <input className="form-control" placeholder="Địa Chỉ Email*" type="text"/>
                     </div>
                     </div>
                     
@@ -129,12 +126,12 @@ class Contact extends Component {
                     <div className="contact_2l1 mt-3 row">
                     <div className="col-md-6">
                     <div className="contact_2l1i">
-                        <input className="form-control" placeholder="Name*" type="text"/>
+                        <input className="form-control" placeholder="Số Điện Thoại*" type="text"/>
                     </div>
                     </div> 
                     <div className="col-md-6">
                     <div className="contact_2l1i">
-                        <input className="form-control" placeholder="Email*" type="text"/>
+                        <input className="form-control" placeholder="Tiêu Đề*" type="text"/>
                     </div>
                     </div>
                     
@@ -142,8 +139,8 @@ class Contact extends Component {
                     <div className="contact_2l1 mt-3 row">
                     <div className="col-md-12">
                     <div className="contact_2l1i">
-                        <textarea placeholder="Comment" className="form-control form_text"></textarea>
-                        <h6 className="mt-3 mb-0"><a className="button" href="#"> Submit</a></h6>
+                        <textarea placeholder="Tin Nhắn" className="form-control form_text"></textarea>
+                        <h6 className="mt-3 mb-0"><a className="button" href="#"> Gửi Tin Nhắn</a></h6>
                     </div>
                     </div> 
                     </div>
@@ -151,7 +148,7 @@ class Contact extends Component {
                 </div>
                 <div className="row contact_3 mt-4">
                 <div className="col-md-12">
-                    <iframe height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d501726.46147448797!2d106.41434832066398!3d10.754665783522423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529292e8d3dd1%3A0xf15f5aad773c112b!2sHo%20Chi%20Minh%20City%2C%20Vietnam!5e0!3m2!1sen!2s!4v1678102698055!5m2!1sen!2s" style={{ width:"100%", border: 0, allowFullScreen: "", loading: "lazy", referrerpolicy: "no-referrer-when-downgrade"}}></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0591829855216!2d106.64372977592801!3d10.806779258631295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317529443c7992d5%3A0x6278c56b5c41fb2!2zTmd1eeG7hW4gSGnhur9uIEzDqiwgcGjGsOG7nW5nIDEzLCBUw6JuIELDrG5oLCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmgsIFZpZXRuYW0!5e0!3m2!1sen!2s!4v1682303709671!5m2!1sen!2s" width="100%" height="450" style={{"border":"0"}} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 </div>
                 </div>
